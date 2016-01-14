@@ -1,0 +1,6 @@
+collections:
+- chapters
+
+collections:
+  chapters:
+    output: true
