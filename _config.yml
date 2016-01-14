@@ -1,6 +1,7 @@
 collections:
-- chapters
+	- chapters
 
 collections:
-  chapters:
-    output: true
+	cupcakes:
+		output: true
+		permalink: /cupcakes/:path/
