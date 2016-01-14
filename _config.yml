@@ -4,4 +4,4 @@ collections:
 collections:
 	chapters:
 		output: true
-		permalink: /cupcakes/:path/
+		permalink: /chapters/:path/
