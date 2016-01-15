@@ -1,5 +1,5 @@
 <ul>
 {% for chapter in site.chapters %}
-  <li><a href="{{ site.url }}{{ chapter.url }}">{{ chapter.chapter }}.{{chapter.subchapter}} {{chapter.title }}</a></li>
+  <li><a href="{{ site.baseurl }}{{ chapter.url }}">{{ chapter.chapter }}.{{chapter.subchapter}} {{chapter.title }}</a></li>
 {% endfor %}
 </ul>
