@@ -1,6 +1,6 @@
 ---
 layout: page
-title:	{{ page.chapter_number }}.{{ page.subchapter_number }} {{page.title}}
+title:	"{{ page.chapter_number }}.{{ page.subchapter_number }} {{page.title}}"
 ---
 
 
