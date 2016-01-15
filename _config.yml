@@ -1,3 +1,5 @@
+baseurl: "Handbuch-Jugend-Hackathons"
+
 collections:
     - chapters
 
