@@ -1,7 +1,7 @@
 ---
-title:Über die Autorinnen
-chapter:1
-subchapter:1
+title: "Über die Autorinnen"
+chapter: 1
+subchapter: 1
 ---
 
 ##Über die Autor/innen
