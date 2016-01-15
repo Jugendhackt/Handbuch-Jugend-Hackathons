@@ -1,3 +1,5 @@
+---
+---
 ##Jugendspezifische Anpassungen des Formats       
 Ein Wesensmerkmal von Hackathons ist die Selbstbestimmung der Teilnehmenden. Deswegen ist das ursprüngliche Format aus der Berufs- bzw. Erwachsenenwelt an vielen Stellen sehr offen gehalten. Neuankömmlinge sind stark gefordert, ihre eigene Rolle in der Veranstaltung zu finden. Um die jugendlichen Teilnehmenden zu Beginn nicht zu überfordern, haben wir darum bei „Jugend hackt“ zahlreiche Formatanpassungen entwickelt, die insbesondere das Ankommen und Eintauchen in die Veranstaltung vereinfachen, ohne den Grundcharakter der Selbstbestimmung in Frage zu stellen. Insbesondere in Kapitel 3 werden wir noch einmal genauer auf die verschiedenen Anpassungen in den jeweiligen Phasen eingehen, deswegen hier nur ein Überblick über die Module, die sich ggf. von “typischen” Hackathons unterscheiden.
 

@@ -1,3 +1,5 @@
+---
+---
 ##Was ist „Jugend hackt“ und was möchte diese Anleitung nicht?
 „Jugend hackt“ ist ein Förderprogramm für junge computerbegeisterte Menschen zwischen 12 und 18 Jahren. Im Jahr 2013 mit einem Hackathon als Pilot gestartet, um zunächst den Bedarf an einer derartigen Veranstaltung zu klären, wurde „Jugend hackt“ von der Nachfrage regelrecht überrollt. Seitdem wird das Programm in Tiefe und Breite stetig ausgebaut. Das Kernelement von „Jugend hackt“ sind und bleiben jedoch regelmäßig stattfindende Veranstaltungen in Form von Jugend-Hackathons.
 

@@ -12,4 +12,4 @@ defaults:
       path: ""
       type: chapters
     values:
-      layout: page
+      layout: chapter
