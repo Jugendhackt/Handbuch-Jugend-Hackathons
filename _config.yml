@@ -5,3 +5,11 @@ collections:
     chapters:
         output: true
         permalink: /chapters/:path/
+
+
+defaults:
+  - scope:
+      path: ""
+      type: chapters
+    values:
+      layout: page
