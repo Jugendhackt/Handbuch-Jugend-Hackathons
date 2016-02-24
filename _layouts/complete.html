@@ -11,9 +11,22 @@
 		</aside>
 
 		<section class="main-content" >
-			{% for chapter in site.chapters %}
-				{{ chapter.output }}
+
+			{% assign chapter_groups = site.chapters | group_by: 'chapter_number' | sort: 'name', 'first' %}
+			{% for chapter_group in chapter_groups %}
+
+				{% assign chapters = chapter_group.items | sort: 'subchapter_number', 'first' %}
+				{% for chapter in chapters %}
+
+					<article id = "c-{{chapter.title | slugify}}">
+						<h2>{{ chapter.chapter_number }}.{{ chapter.subchapter_number }} {{ chapter.title }}</h2>
+						{{ chapter.content | markdownify }}
+					</article>
+
+				{% endfor %}
+
 			{% endfor %}
+
 		</section>
 
 		{% include footer.html %}

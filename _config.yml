@@ -5,7 +5,7 @@ collections:
 
 collections:
     chapters:
-        output: true
+        output: false
         permalink: /chapters/:path/
 
 
@@ -13,5 +13,3 @@ defaults:
   - scope:
         path: ""
         type: chapters
-    values:
-        layout: chapter
