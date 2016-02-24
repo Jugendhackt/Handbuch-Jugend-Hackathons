@@ -18,10 +18,7 @@
 				{% assign chapters = chapter_group.items | sort: 'subchapter_number', 'first' %}
 				{% for chapter in chapters %}
 
-					<article id = "c-{{chapter.title | slugify}}">
-						<h2>{{ chapter.chapter_number }}.{{ chapter.subchapter_number }} {{ chapter.title }}</h2>
-						{{ chapter.content | markdownify }}
-					</article>
+						{{ chapter.output }}
 
 				{% endfor %}
 
