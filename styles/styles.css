@@ -1,0 +1,33 @@
+
+@font-face { font-family: 'fira-sans-semi-bold'; 	src: url('../fonts/FiraSans-SemiBold.otf')		format('opentype'); }
+@font-face { font-family: 'fira-sans-light'; 		src: url('../fonts/FiraSans-Light.otf')			format('opentype'); }
+@font-face { font-family: 'fira-sans-regular'; 		src: url('../fonts/FiraSans-Regular.otf')		format('opentype'); }
+
+
+body,
+html {
+	padding:			0;
+	margin:				0;
+	min-height:			100%;
+	font-family:		fira-sans-regular, sans-serif;
+}
+
+ul {
+	list-style: 		none;
+	padding:			0;
+	margin:				0;
+}
+
+.panel {
+	position:			absolute;
+	top:				0;
+	left:				0;
+	width:				20rem;
+	bottom:				0;
+}
+
+section.main-content {
+	display:			block;
+	width:				60rem;
+	margin-left:		20rem;
+}
