@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: complete
 title:	Handbuch Jugend-Hackathons
 ---
 

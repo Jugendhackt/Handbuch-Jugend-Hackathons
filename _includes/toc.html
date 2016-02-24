@@ -1,5 +1,22 @@
-<ul>
-{% for chapter in site.chapters %}
-  <li><a href="{{ site.github.url }}{{ chapter.url }}">{{ chapter.chapter_number }}.{{chapter.subchapter_number }} {{chapter.title }}</a></li>
+<ul id = "toc">
+{% assign chapter_groups = site.chapters | group_by: 'chapter_number' | sort: 'name', 'first' %}
+{% for chapter_group in chapter_groups %}
+	<li>
+		<ul class = "chapter_group">
+			{% assign chapters = chapter_group.items | sort: 'subchapter_number', 'first' %}
+
+			{% for chapter in chapters %}
+
+				<li>
+					<!-- <a href="{{ site.github.url }}{{ chapter.url }}"> -->
+					<a href = "#c-{{chapter.title | slugify}}">
+						<span class = "chapter-number">{{ chapter.chapter_number }}.{{chapter.subchapter_number }}</span> 
+						{{chapter.title }}
+					</a>
+				<li>
+			{% endfor %}
+		</ul>
+
+	</li>
 {% endfor %}
 </ul>

@@ -9,7 +9,12 @@ html {
 	padding:			0;
 	margin:				0;
 	min-height:			100%;
-	font-family:		fira-sans-regular, sans-serif;
+	font-family:		fira-sans-light, sans-serif;
+}
+
+h1,h2,h3,h4 {
+	font-family: 		fira-sans-regular;
+	font-weight:		normal;
 }
 
 ul {
@@ -18,16 +23,72 @@ ul {
 	margin:				0;
 }
 
-.panel {
-	position:			absolute;
+a {
+	text-decoration:	none;
+	color:				inherit;
+	color:				#4488ff;
+	font-family:		fira-sans-regular;
+}
+
+strong {
+	font-family:		fira-sans-semi-bold;
+	font-weight:		normal;
+}
+
+
+header {
+	position:			fixed;
 	top:				0;
 	left:				0;
-	width:				20rem;
-	bottom:				0;
+	width:				18rem;
+	bottom:				10rem;
+	padding:			1rem;
+	background:			#fff;
 }
+
+aside {
+	position:			fixed;
+	left:				0;
+	bottom:				0;
+	width:				18rem;
+	padding:			1rem;
+	height:				auto;
+	text-align:			justify;
+	background:			#fff;
+	font-size:			0.9rem;
+}
+
+#toc li {
+	display:			block;
+	white-space:		normal;
+	word-break:			break-all;
+	text-align:			right;
+	margin-bottom:		0.5rem;
+}
+
+#toc li a {
+	color:				inherit;
+	font-family:		fira-sans-light;
+}
+
+#toc li .chapter-number {
+	float:				left;
+	text-align:			left;
+	font-family:		fira-sans-regular;
+}
+#toc .chapter_group {
+	margin-bottom:		1.5rem;
+}
+
 
 section.main-content {
 	display:			block;
-	width:				60rem;
+	max-width:			40rem;
 	margin-left:		20rem;
+	padding:			0 5rem;
+}
+
+
+h2 {
+	margin-top:			5rem;
 }

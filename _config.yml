@@ -1,17 +1,17 @@
 baseurl: "/Handbuch-Jugend-Hackathons"
 
 collections:
-    - chapters
+	- chapters
 
 collections:
-    chapters:
-        output: true
-        permalink: /chapters/:path/
+	chapters:
+		output: true
+		permalink: /chapters/:path/
 
 
 defaults:
   - scope:
-      path: ""
-      type: chapters
-    values:
-      layout: chapter
+		path: ""
+		type: chapters
+	values:
+		layout: chapter
