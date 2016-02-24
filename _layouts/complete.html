@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de-de">
+	{% include head.html %}
+
+	<body>
+
+		{% include header.html %}
+
+		<aside>
+			{{ content }}
+		</aside>
+
+		<section class="main-content" >
+			{% for chapter in site.chapters %}
+				{{ chapter.output }}
+			{% endfor %}
+		</section>
+
+		{% include footer.html %}
+
+	</body>
+</html>
