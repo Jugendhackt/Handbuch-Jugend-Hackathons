@@ -9,11 +9,13 @@ Ein Konzept macht noch keinen guten Jugend-Hackathon. Aber einen guten Jugend-Ha
 Ein Konzept vermittelt Sicherheit und das Gefühl, das Format planerisch unter Kontrolle zu haben. An diesem Punkt unterscheidet sich möglicherweise das Konzept für einen Jugend-Hackathon von anderen Formaten der Jugend(medien)arbeit. Denn es ist integraler Bestandteil eines Jugend-Hackathons, keine Kontrolle über die Ergebnisse der Veranstaltung zu haben. Mit dieser Abgabe von Kontrolle kommt ein Jugend-Hackathon am ehesten dem Format Barcamp nahe, bei dem zwar der anfängliche Prozess, aber nicht das Ergebnis definiert ist. „Ich möchte einen Jugend-Hackathon veranstalten, auf dem Apps für sichere Internetnutzung von Kindern entstehen“, ist garantiert die falsche Herangehensweise. „Ich möchte einen Jugend-Hackathon veranstalten, in dem sich ein Themenraum mit sicherer Internetnutzung befasst“, schon eher. 
 
 Bei der Konzeption gilt es zunächst, Ziele zu definieren. Dabei unterscheiden sich die eigenen Ziele von den Zielen der Veranstaltung. Eigene Ziele könnten sein:
+
 * sich mit dem Format des Hackathons vertraut zu machen,
 * das Format zum Anlass zu nehmen, das eigene Netzwerk zu erweitern,
 * persönlich bekannten, technisch versierten Jugendlichen ein Format zum Austausch und zur Weiterentwicklung anzubieten.
 
-Um Ziele der Veranstaltung zu definieren, könnte man folgende Fragen stellen und beantworten: 
+Um Ziele der Veranstaltung zu definieren, könnte man folgende Fragen stellen und beantworten:
+
 * Was ist ein gesellschaftlich relevantes Thema, das die Jugendlichen interessiert? 
 * Wann ist die Veranstaltung erfolgreich? (Dies müssen keine quantitativen Kriterien wie z.B. die Teilnehmendenzahl sein, sondern der Erfolg kann sich auch auf Lernkurven der Teilnehmenden beziehen oder auf die Qualität der umgesetzten Ideen etc.)
 * Wie kann ich jugendliche Perspektiven auf mein Thema (z.B. Umweltbildung) sichtbar machen und jugendliches Engagement in diesem Bereich fördern?
