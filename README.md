@@ -3,3 +3,5 @@
 
 Gefördert durch die Jugend- und Familienstiftung des Landes Berlin im Rahmen des Jugend-Demokratiefonds Berlin. Diese Förderung bedeutet nicht zwangsläufig, dass die Stiftung den Ergebnissen und Aussagen des Textes zustimmt.
 
+[Hier](https://jugendhackt.github.io/Handbuch-Jugend-Hackathons) geht es zur Webseite des Handbuchs.
+
