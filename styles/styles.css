@@ -11,11 +11,16 @@ html {
 	min-height:			100%;
 	font-family:		fira-sans-light, sans-serif;
 	overflow-x:			hidden;
+	background:			#f9f6ed;
 }
 
 h1,h2,h3,h4 {
 	font-family: 		fira-sans-regular;
 	font-weight:		normal;
+}
+
+h1 {
+	font-size:			1.4rem;
 }
 
 ul {
@@ -41,52 +46,78 @@ header {
 	position:			fixed;
 	top:				0;
 	left:				0;
-	width:				18rem;
-	bottom:				10rem;
+	width:				23rem;
+	bottom:				15rem;
 	padding:			1rem;
-	background:			#fff;
 }
 
 aside {
 	position:			fixed;
 	left:				0;
 	bottom:				0;
-	width:				18rem;
+	width:				23rem;
 	padding:			1rem;
 	height:				auto;
 	text-align:			justify;
-	background:			#fff;
-	font-size:			0.9rem;
+	font-size:			0.8rem;
+}
+
+#toc {
+	position:			absolute;
+	top:				6rem;
+	left:				1rem;
+	right:				1rem;
+	bottom:				0;
+	overflow-y:			scroll;
+	overflow-x:			visible;
 }
 
 #toc li {
 	display:			block;
 	white-space:		normal;
-	word-break:			break-all;
 	text-align:			right;
-	margin-bottom:		0.5rem;
+	margin-bottom:		0.25rem;
 }
 
 #toc li a {
 	color:				inherit;
 	font-family:		fira-sans-light;
+	display:			block;
+	padding-right:		1rem;
+	line-height:		1.2;
+}
+
+/* 
+	paragraph should not be styled like this,
+	nad should not appear within <a>. 
+	But markdown semms to always reder them, so this is a work around.
+*/
+
+#toc li a p {
+	display:			inline;
+	margin:				0;
 }
 
 #toc li .chapter-number {
 	float:				left;
 	text-align:			left;
-	font-family:		fira-sans-regular;
+	margin-right:		2rem;
 }
-#toc .chapter_group {
+#toc > li > ul  {
 	margin-bottom:		1.5rem;
 }
 
 
+.chapter-number {
+	font-family:		monospace;
+}
+
 section.main-content {
 	display:			block;
 	max-width:			40rem;
-	margin-left:		20rem;
-	padding:			0 5rem;
+	margin-left:		25rem;
+	padding-right:		2rem;
+	padding-left:		4rem;
 }
 
 
