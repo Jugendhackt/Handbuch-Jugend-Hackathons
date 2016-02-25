@@ -10,7 +10,7 @@ Die Veranstaltungsräumlichkeiten müssen den vielfältigen Ansprüchen des Juge
 Die folgende Matrix stammt aus dem „Leitfaden für Jugend-Barcamps“ ([http://jbc.medialepfade.de/](http://jbc.medialepfade.de/)) und bietet eine sehr gute Übersicht, welche Anzahl und Größe an Räumen für welche Anzahl an Teilnehmenden benötigt wird.
 
 | Gruppengröße | Raumgröße |          |          |          |          |           |           | Gesamt-Räume |
-|--------------|-----------|----------|----------|----------|----------|-----------|-----------|--------------|
+|--------------|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|
 |              |  10 Pers. | 20 Pers. | 40 Pers. | 60 Pers. | 80 Pers. | 100 Pers. | 150 Pers. |              |
 | 20-40        |     2     |          |     1    |          |          |           |           |       3      |
 | 40-60        |     2     |     1    |          |     1    |          |           |           |       4      |
