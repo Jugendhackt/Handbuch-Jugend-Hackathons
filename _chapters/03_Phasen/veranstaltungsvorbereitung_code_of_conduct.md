@@ -1,8 +1,6 @@
 ---
 title: 					"Code of Conduct"
-chapter_number: 		3
-subchapter_number:		8
-subsubchapter_number:	2
+number: 		"3.8.2"
 ---
 
 Ein „Code of Conduct“, also veröffentlichte Verhaltensregeln, die für alle während und um die Veranstaltung gelten, ist nicht zwingend nötig für einen Jugend-Hackathon. Er hilft jedoch bei der Orientierung und der klaren Kommunikation von Grundwerten, Haltungen und erwünschtem sowie unerwünschtem Verhalten.

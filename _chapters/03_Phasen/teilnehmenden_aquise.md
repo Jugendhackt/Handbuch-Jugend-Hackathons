@@ -1,7 +1,6 @@
 ---
 title: 				"Teilnehmenden-Akquise (*Personas*)"
-chapter_number: 	3
-subchapter_number:	5
+number: 	"3.5"
 ---
 
 Eine der ersten Fragen, die es gilt, bei der Konzeption eines Jugend-Hackathons zu beantworten, ist die Frage nach der Zielgruppe. Wen möchte man mit dem jeweiligen Angebot erreichen? Hilfreich ist es hierbei, sogenannte *Personas* zu erstellen. Dabei stellt man sich die verschiedenen Vertreter/innen der gewünschten Zielgruppe anhand prototypischer Eigenschaften vor. Aufgrund dieser Analyse lässt sich dann beispielsweise viel besser ahnen, wo und wie man die Zielgruppe erreicht, und es lässt sich im Nachhinein deutlich leichter feststellen, ob man tatsächlich die gewünschte Zielgruppe erreicht hat – ein wichtiger Faktor, um den tatsächlichen Erfolg der Veranstaltung zu messen. 

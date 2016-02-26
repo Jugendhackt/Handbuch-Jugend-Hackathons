@@ -1,12 +1,7 @@
-<article id = "c-{{page.title | slugify}}">
-	<h2>
-		<span class ="chapter-number">
-		   {% if page.chapter_number %}{{ page.chapter_number }}{% endif %}<!--
-		-->{% if page.subchapter_number %}.{{ page.subchapter_number }}{% endif %}<!--
-		-->{% if page.subsubchapter_number %}.{{ page.subsubchapter_number }}{% endif %}<!--
-		-->{% if page.subsubsubchapter_number %}.{{ page.subsubsubchapter_number }}{% endif %}
-		</span>
+<article id = "chapter-{{page.number}}">
+	<h{{ page.number | split: "." | size | plus: 1}}>
+		<span class ="chapter-number">{{page.number}}</span>
 		{{ page.title }}
-	</h2>
+	</h{{ page.number | split: "." | size | plus: 1}}>
 	{{page.content | markdownify}}
 </article>

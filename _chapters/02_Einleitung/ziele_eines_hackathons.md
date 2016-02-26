@@ -1,7 +1,6 @@
 ---
 title: 				"Ziele eines Hackathons"
-chapter_number: 	2
-subchapter_number:	4
+number: 	"2.4"
 ---
      
 Hackathons haben sich in der Soft- und Hardwarebranche als Format etabliert, um Innovation zu schaffen und Vernetzung unter Akteur/innen anzuregen. Aus Perspektive der jeweiligen Veranstalter/innen gibt es zahlreiche, unterschiedliche Ziele.

@@ -4,6 +4,19 @@
 @font-face { font-family: 'fira-sans-regular'; 		src: url('../fonts/FiraSans-Regular.otf')		format('opentype'); }
 
 
+/*
+	color:
+
+	blue-deep:			#00b9cb;
+	blue-medium:		#91e3f2;
+	blue-light:			#c7eaf1;
+
+	orange-deep:		#f97134;
+	orange-medium:		#f6c6a9;
+	orange-light:		#f4e9df;
+ */
+
+
 body,
 html {
 	padding:			0;
@@ -11,7 +24,7 @@ html {
 	min-height:			100%;
 	font-family:		fira-sans-light, sans-serif;
 	overflow-x:			hidden;
-	background:			#f9f6ed;
+	background:			#fff;
 }
 
 h1,h2,h3,h4 {
@@ -65,26 +78,94 @@ aside {
 #toc {
 	position:			absolute;
 	top:				6rem;
-	left:				1rem;
+	left:				0.5rem;
 	right:				1rem;
 	bottom:				0;
 	overflow-y:			scroll;
-	overflow-x:			visible;
+	overflow-x:			hidden;
 }
 
 #toc li {
 	display:			block;
 	white-space:		normal;
 	text-align:			right;
-	margin-bottom:		0.25rem;
+	padding:			0.125rem 0;
+	clear:				both;
 }
+
+#toc li.depth-1 {
+	color:				#fff;
+	margin-top:			1rem;
+	padding-left:		1rem;
+	text-align:			left;
+	margin-top:			2rem;
+}
+
+#toc li:not(.depth-1) {
+	margin-left:		1rem;
+}
+
+
+#toc li.depth-1 .chapter-number {
+	margin-right:		0.5rem;
+}
+
+#toc li.depth-1 a{
+	display:			inline-block;
+	min-width:			8rem;
+}
+
+
+/*colors*/
+
+/**orange**/
+
+#toc .chapter-2.depth-1{
+	background:			#f97134 !important;
+}
+
+#toc .chapter-2.depth-1 a{
+	box-shadow:			0 -0.5rem 0 #f97134;
+}
+
+#toc .chapter-2:nth-of-type(2n+2) {
+	background:			#f4e9df;
+}
+
+#toc .chapter-2:nth-of-type(2n+3) {
+	background:			#f6c6a9;
+}
+
+/** blue  **/
+
+
+#toc .chapter-1.depth-1,
+#toc .chapter-3.depth-1 {
+	background:			#00b9cb !important;
+}
+
+#toc .chapter-1.depth-1 a,
+#toc .chapter-3.depth-1 a{
+	box-shadow:			0 -0.5rem 0 #00b9cb;
+}
+
+#toc .chapter-1:nth-of-type(2n+2),
+#toc .chapter-3:nth-of-type(2n+2){
+	background:			#c7eaf1;
+}
+
+#toc .chapter-1:nth-of-type(2n+3),
+#toc .chapter-3:nth-of-type(2n+3){
+	background:			#91e3f2;
+}
+
 
 #toc li a {
 	color:				inherit;
 	font-family:		fira-sans-light;
 	display:			block;
-	padding-right:		1rem;
 	line-height:		1.2;
+	padding-right:		1rem;
 }
 
 /* 
@@ -102,15 +183,23 @@ aside {
 	float:				left;
 	text-align:			left;
 	margin-right:		2rem;
-}
-#toc > li > ul  {
-	margin-bottom:		1.5rem;
+	margin-left:		0.5rem;
 }
 
+#toc > li > ul  {
+	margin-bottom:		4rem;
+}
 
 .chapter-number {
 	font-family:		monospace;
 }
+
+
+
+
+
+
+
 
 section.main-content {
 	display:			block;
@@ -121,6 +210,12 @@ section.main-content {
 }
 
 
-h2 {
+section.main-content h2 {
 	margin-top:			5rem;
+}
+
+
+section.main-content ul {
+	list-style: 		disc outside none;
+	padding-left:		3rem;
 }

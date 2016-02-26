@@ -1,7 +1,6 @@
 ---
 title: 				"Fundraising und Budget"
-chapter_number: 	3
-subchapter_number:	3
+number: 	"3.3"
 ---
 
 Ein Jugend-Hackathon kostet Geld. Selbst wenn man die Veranstaltungsorganisation durch ehrenamtliche Arbeit bestreitet und die gesamte Infrastruktur gestellt bekommt, benötigen die einzelnen Posten Ressourcen. Bei der Suche nach finanziellen Mitteln ist es hilfreich, diese Werte in einem Budgetplan festzuhalten, um eine Vorstellung vom Umfang der erforderlichen Summen zu bekommen und diese potentiellen Geldgebern auch kommunizieren zu können. Ein wichtiges Ziel sollte es sein, soziale Ungleichheiten möglichst zu überwinden, um allen Jugendlichen, unabhängig vom Einkommen der Eltern, Zugang zum Jugend-Hackathon zu ermöglichen.

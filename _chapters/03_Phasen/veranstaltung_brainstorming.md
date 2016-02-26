@@ -1,8 +1,6 @@
 ---
 title: 					"Brainstorming"
-chapter_number: 		3
-subchapter_number:		9
-subsubchapter_number:	5
+number: 		"3.9.5"
 ---
 
 | Zeitlicher Umfang | Technik und Materialbedarf                                                                                                                                           | Verantwortlich |

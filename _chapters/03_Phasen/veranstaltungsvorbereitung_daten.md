@@ -1,8 +1,6 @@
 ---
 title: 					"Daten"
-chapter_number: 		3
-subchapter_number:		8
-subsubchapter_number:	3
+number: 		"3.8.3"
 ---
 
 Daten sind der Rohstoff aller Softwareprojekte, die auf dem Jugend-Hackathon entstehen können, und auch der meisten Hardwareprojekte. Ebenso wie die Technologie, die zur Umsetzung der Projektideen verwendet wird, sind Daten ein Mittel zum Zweck. Wenn es beispielsweise einer Gruppe von Jugendlichen darum geht, eine Kartenanwendung mit einer integrierten Anzeige der Öffnungszeiten aller Schwimmbäder einer Stadt zu bauen, dann reicht nicht die Absichtserklärung der Idee. Die Teilnehmenden müssen befähigt werden, diese Idee auch umzusetzen. Dies ist nur möglich mit einem Datensatz, in dem neben der Bezeichnung des Schwimmbades und der exakten Geoposition (Angabe in Längen- und Breitengrad) auch die Öffnungs- sowie die Schließzeiten nach Wochentag aufgelistet sind.

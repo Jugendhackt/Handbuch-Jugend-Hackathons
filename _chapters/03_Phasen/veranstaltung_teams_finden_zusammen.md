@@ -1,8 +1,6 @@
 ---
 title: 					"Teams finden zusammen"
-chapter_number: 		3
-subchapter_number:		9
-subsubchapter_number:	6
+number: 		"3.9.6"
 ---
 
 | Zeitlicher Umfang | Technik und Materialbedarf                                                                                                                                           | Verantwortlich |

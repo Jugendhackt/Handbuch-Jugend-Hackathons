@@ -1,8 +1,6 @@
 ---
 title: 					"Ankommen"
-chapter_number: 		3
-subchapter_number:		9
-subsubchapter_number:	7
+number: 		"3.9.7"
 ---
 
 | Zeitlicher Umfang | Technik und Materialbedarf                                                                                                                                           | Verantwortlich |

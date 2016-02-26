@@ -1,7 +1,6 @@
 ---
 title: 				"Öffentlichkeitsarbeit"
-chapter_number: 	3
-subchapter_number:	4
+number: 	"3.4"
 ---
 
 Wie so oft steht auch am Anfang einer guten Öffentlichkeitsarbeit die Frage, welche Ziele mit ihr erreicht werden sollen. Es soll Öffentlichkeit hergestellt werden – aber welche Öffentlichkeit genau will man ansprechen? Und wer erreicht diese Öffentlichkeit? Diese Fragen lassen sich nur schwer verallgemeinern und müssen im Grunde vom Organisationsteam selbst beantwortet werden. Während unserer Arbeit für „Jugend hackt“ konnten wir jedoch einige best practices, vor allem in der Kommunikation über Jugend-Hackathons sammeln. 

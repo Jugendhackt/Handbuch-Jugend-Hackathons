@@ -1,44 +1,15 @@
 <ul id ="toc">
-	{% assign main_chapter_groups = site.chapters | group_by: 'chapter_number' | sort: 'name', 'first' %}
-	{% for main_chapter_group in main_chapter_groups %}
-		<li>
-			<ul>
+	{% assign chapters = site.chapters | sort: "number" %}
+	{% for chapter in chapters %}
 
-				{% assign sub_chapter_groups = main_chapter_group.items | group_by: 'subchapter_number' | sort: 'name', 'first' %}
-				{% for sub_chapter_group in sub_chapter_groups %}
-					<li>
-						<ul>
 
-							{% assign sub_sub_chapter_groups = sub_chapter_group.items | group_by: 'subsubchapter_number' | sort: 'name', 'first' %}
-							{% for sub_sub_chapter_group in sub_sub_chapter_groups %}
-								<li>
-									<ul>
+				<li class = "chapter-{{chapter.number | split: "." | first}} depth-{{chapter.number | split: "." | size}}">
+					<a href ="#chapter-{{chapter.number}}">
+						<span class = "chapter-number">	{{chapter.number}}				</span> 
+						<span class = "chapter-title">	{{chapter.title | markdownify}}	</span>
+					</a>
+				</li>
 
-										{% assign chapters = sub_sub_chapter_group.items |sort: 'subsubsubchapter_number' %}
-										{% for chapter in chapters %}
-											<li>
-
-												<a href = "#c-{{chapter.title | slugify}}">
-													<span class = "chapter-number">
-														   {% if chapter.chapter_number %}{{ chapter.chapter_number }}{% endif %}<!--
-														-->{% if chapter.subchapter_number %}.{{ chapter.subchapter_number }}{% endif %}<!--
-														-->{% if chapter.subsubchapter_number %}.{{ chapter.subsubchapter_number }}{% endif %}<!--
-														-->{% if chapter.subsubsubchapter_number %}.{{ chapter.subsubsubchapter_number }}{% endif %}
-													</span> 
-													{{chapter.title | markdownify }}
-												</a>
-											</li>
-										{% endfor %}
-
-									</ul>
-								</li>
-							{% endfor %}
-
-						</ul>
-					</li>
-				{% endfor %}
-
-			</ul>
-		</li>
 	{% endfor %}
 </ul>
+

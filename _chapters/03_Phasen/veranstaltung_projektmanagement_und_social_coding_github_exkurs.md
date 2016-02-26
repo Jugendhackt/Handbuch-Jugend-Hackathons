@@ -1,9 +1,6 @@
 ---
 title: 						"Exkurs: Lizenzen"
-chapter_number: 			3
-subchapter_number:			9
-subsubchapter_number:		9
-subsubsubchapter_number:	2
+number: 			"3.9.9.2"
 type: 						excursion
 ---
 

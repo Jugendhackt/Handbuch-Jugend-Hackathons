@@ -1,8 +1,6 @@
 ---
 title: 					"Rolle der Organisator/innen während der Veranstaltung"
-chapter_number: 		3
-subchapter_number:		9
-subsubchapter_number:	11
+number: 		"3.9.11"
 ---
 
 Die Hauptaufgabe der Organisator/innen ist es, einen möglichst reibungslosen Veranstaltungsablauf zu gewährleisten. Entscheidend ist hierfür, dass alle Beteiligten immer mit den jeweils relevanten Informationen versorgt sind. Hilfreich sind dabei verschiedene Pläne, zum Beispiel für den Aufbau, Ablaufpläne für Mentor/innen, Helfer/innen und Teilnehmende sowie verschiedene Materiallisten und Übersichten (Anwesenheitsliste etc.). Im Fokus sollten jedoch immer die Grundbedürfnisse stehen, ohne die die Veranstaltung nicht möglich ist: funktionierendes Internet, ausreichend Essen und Trinken sowie ansprechende und saubere Veranstaltungsräume.

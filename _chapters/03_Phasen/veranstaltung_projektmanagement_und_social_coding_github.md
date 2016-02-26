@@ -1,9 +1,6 @@
 ---
 title: 						"GitHub"
-chapter_number: 			3
-subchapter_number:			9
-subsubchapter_number:		9
-subsubsubchapter_number:	2
+number: 			"3.9.9.2"
 ---
 
 [GitHub](https://github.com) ist ein äußerst mächtiges Versionsverwaltungsprogramm, das sich in weiten Teilen der Entwickler/innen-Szene großer Beliebtheit erfreut. Auf GitHub lässt sich nicht nur Programmcode online stellen, verwalten und gemeinsam entwickeln, es hat sich sogar zu einer Art Social-Media-Plattform für Programmierer/innen entwickelt. Gerade bei Entwickler/innen, die sich dem Open-Source-Gedanken verpflichtet fühlen, gehört es inzwischen zum guten Ton, den eigenen Code unter einer freien Lizenz auf GitHub anzubieten. Eine vollständige Einführung in GitHub würde an dieser Stelle zu weit führen, es gibt im Netz aber zahlreiche Tutorials und Videos über die Verwendung von GitHub. Wie vielfältig sich die Plattform einsetzen lässt, zeigt auch der GitHub-Workshop bei „Jugend hackt“ in Ulm und Berlin 2015. Die Folien hierfür sind direkt über GitHub abrufbar ([https://github.com/Jugendhackt/git-talk](https://github.com/Jugendhackt/git-talk)).

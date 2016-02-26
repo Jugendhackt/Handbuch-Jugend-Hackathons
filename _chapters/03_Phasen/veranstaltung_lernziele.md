@@ -1,8 +1,6 @@
 ---
 title: 					"Lernziele der Teilnehmenden"
-chapter_number: 		3
-subchapter_number:		9
-subsubchapter_number:	8
+number: 		"3.9.8"
 ---
 
 | Zeitlicher Umfang | Technik und Materialbedarf                                                                                                                                           | Verantwortlich |

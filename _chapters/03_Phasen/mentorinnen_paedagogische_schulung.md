@@ -1,8 +1,6 @@
 ---
 title: 					"Pädagogische Schulung"
-chapter_number: 		3
-subchapter_number:		6
-subsubchapter_number:	2
+number: 		"3.6.2"
 ---
 
 Mentor/innen verfügen üblicherweise über kein oder kaum pädagogisches Know-How, nehmen dieses aber unserer Erfahrung nach dankbar an. Es empfiehlt sich, dafür einen eigenen Termin anzusetzen, der wenige Wochen vor dem Jugend-Hackathon stattfindet. Dort sollten die (Medien-)Pädagog/innen die folgenden Themen ansprechen, aber auch genug Raum für Diskussionen und Nachfragen lassen.

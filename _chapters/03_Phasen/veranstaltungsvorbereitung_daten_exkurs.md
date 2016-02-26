@@ -1,8 +1,6 @@
 ---
 title: 					"Exkurs: Offene Daten"
-chapter_number: 		3
-subchapter_number:		8
-subsubchapter_number:	3
+number: 		"3.8.3"
 type: 					excursion
 ---
 

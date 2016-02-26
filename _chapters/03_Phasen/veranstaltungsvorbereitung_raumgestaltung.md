@@ -1,8 +1,6 @@
 ---
 title: 					"Raumgestaltung"
-chapter_number: 		3
-subchapter_number:		8
-subsubchapter_number:	5
+number: 		"3.8.5"
 ---
 
 Der Raum trägt maßgeblich zum Erfolg der Veranstaltung bei, deswegen sollte bei der Gestaltung auf allen Ebenen viel Vorbereitung und bei der Umsetzung viel Liebe einfließen. Wie im „Kapitel 3.7.2 Atmosphäre“ beschrieben, kann durch Gestaltung viel getan werden, um einladend und offen zu wirken und so zentrale Ansprüche an die Veranstaltung zu erfüllen. Je nach entwickelter CI (*Corporate Identity*) der Veranstaltung können hier zusätzliche Identifikationspunkte geschaffen werden, indem mit Gestaltungselementen z.B. vom Flyer weitergearbeitet wird und so Wände, Decken und Tische gestaltet werden.

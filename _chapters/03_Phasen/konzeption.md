@@ -1,7 +1,6 @@
 ---
 title: 				"Konzeption"
-chapter_number: 	3
-subchapter_number:	1
+number: 	"3.1"
 ---
 
 Ein Konzept macht noch keinen guten Jugend-Hackathon. Aber einen guten Jugend-Hackathon gibt es nicht ohne Konzept. 

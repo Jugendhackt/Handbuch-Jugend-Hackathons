@@ -1,8 +1,6 @@
 ---
 title: 					"Rolle der Mentor/innen während der Veranstaltung"
-chapter_number: 		3
-subchapter_number:		9
-subsubchapter_number:	12
+number: 		"3.9.12"
 ---
 
 Zur Rolle der Mentor/innen wurde im „Kapitel 3.6.2 Pädagogische Schulung“ schon viel gesagt. Wichtig ist, die dort formulierten Grundhaltungen an wirklich alle Mentor/innen zu kommunizieren. Um die Stimmung und Bedarfe im Team zu erkennen, sollten vor und während der Veranstaltung regelmäßig Treffen stattfinden. Es empfiehlt sich, ein Mentor/innen-Treffen, angeleitet durch das pädagogische Team, direkt vor der Veranstaltung anzusetzen, um dort nochmals den ersten Tag, die Rollen und Aufgaben der Mentor/innen durchzusprechen. Eine gute Gelegenheit auch, um allen auftauchenden Fragen Raum zu geben und Sicherheit für die ersten Schritte zu vermitteln.

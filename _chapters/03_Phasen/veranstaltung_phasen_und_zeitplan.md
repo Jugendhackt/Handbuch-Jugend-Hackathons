@@ -1,8 +1,6 @@
 ---
 title: 					"Phasen und Zeitplan eines Jugend-Hackathons in der Übersichtt"
-chapter_number: 		3
-subchapter_number:		9
-subsubchapter_number:	1
+number: 		"3.9.1"
 ---
 
 Im Folgenden findet sich ein grober Ablaufplan für einen Jugend-Hackathon. Er basiert auf unseren langjährigen Erfahrungen mit „Jugend hackt“, lässt sich aber selbstverständlich für andere Kontexte beliebig anpassen. Die wichtigsten Phasen werden in den folgenden Kapiteln genauer beleuchtet.

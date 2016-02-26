@@ -1,8 +1,6 @@
 ---
 title: 					"Rolle der Pädagog/innen während der Veranstaltung"
-chapter_number: 		3
-subchapter_number:		9
-subsubchapter_number:	13
+number: 		"3.9.13"
 ---
 
 Die Aufgabe der Pädagog/innen besteht während der Veranstaltung zum einen in der Begleitung der Mentor/innen bei der Bewältigung ihrer Aufgaben, zum anderen agieren sie als direkte Ansprechpersonen für die Teilnehmenden und bemühen sich aktiv um das Wohlergehen der Jugendlichen. Durch ihre Präsenz während der Veranstaltung, den regelmäßigen Kontakt zu den Mentor/innen und den einzelnen Projektteams geben sie Sicherheit, können aber auch frühzeitig Stimmungen wahrnehmen und entsprechend reagieren.

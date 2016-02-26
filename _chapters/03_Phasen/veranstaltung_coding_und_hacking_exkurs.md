@@ -1,8 +1,6 @@
 ---
 title: 					"Flow"
-chapter_number: 		3
-subchapter_number:		9
-subsubchapter_number:	10
+number: 		"3.9.10"
 type:					excursion
 ---
 

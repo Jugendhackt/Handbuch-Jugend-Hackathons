@@ -1,7 +1,6 @@
 ---
 title: 				"Rollen und Kompetenzen im Team"
-chapter_number: 	3
-subchapter_number:	2
+number: 	"3.2"
 ---
 
 Das Team bildet am besten die Diversität ab, die auch für die Veranstaltung gewünscht ist. Im Kern braucht es drei verschiedene Rollen, die sich zum Teil decken können. Um das ganze Event auf die Beine zu stellen, braucht es ein **Organisationsteam**, das das gesamte Team und den Prozess koordiniert, zentrale Entscheidungen trifft und alle Gruppen miteinander verbindet. Das Organisationsteam bildet sich am besten aus Menschen, die sich zivilgesellschaftlich mit den Folgen von Technik und Digitialisierung auseinandersetzen oder die zumindest neuen Technologien eher aufgeschlossen als befangen gegenüberstehen. Das Organisationsteam sollte sich auch um Fundraising, Öffentlichkeits- und Pressearbeit sowie um das Design der Veranstaltung mindestens koordinierend kümmern. Die genauen Aufgaben werden im „Kapitel 3 - Phasen“ beschrieben.

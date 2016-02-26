@@ -1,8 +1,6 @@
 ---
 title: 					"Coding und Hacking"
-chapter_number: 		3
-subchapter_number:		9
-subsubchapter_number:	10
+number: 		"3.9.10"
 ---
 
 Nachdem die Ideen- und Gruppenfindungsphase abgeschlossen ist, beginnt die Kernphase des Hackathons: Die Jugendlichen arbeiten an der Umsetzung ihrer Projektideen. Dies ist die längste und intensivste Phase des Hackathons und gleichzeitig die wichtigste Phase bezüglich der Selbstbestimmung der Teilnehmenden. Das Organisationsteam darf an dieser Stelle den Überblick über den Status quo der einzelnen Projekte verlieren, denn die inhaltliche Betreuung ist durch die Mentor/innen gewährleistet. Sie begleiten die Teilnehmenden je nach Bedarf unterschiedlich intensiv. Einige homogene Gruppen werden nicht nur auf einem ähnlichen Wissensstand sein, sondern auch so autark arbeiten, dass sie gar keine inhaltliche Betreuung benötigen. Andere Projektgruppen sind, was den technologischen Wissensstand und auch die soziale Zusammensetzung betrifft, heterogener. Hier ist der Betreuungsbedarf durch Mentor/innen und Medienpädagog/innen höher. Wieder andere Gruppen verlieren möglicherweise sogar Mitglieder, da diese inhaltlich und technologisch in einer anderen Gruppe besser aufgehoben sind oder – auch das ist möglich – weil sie nicht vom individuellen Arbeiten abzubringen sind. Es ist die Aufgabe der Mentor/innen und Medienpädagog/innen, an dieser Stelle auf das Angebot des Hackathons vor allem in Hinsicht auf den sozialen Austausch und die Lernmöglichkeiten im Team hinzuweisen.

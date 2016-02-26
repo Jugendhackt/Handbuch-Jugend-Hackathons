@@ -12,25 +12,10 @@
 
 		<section class="main-content" >
 
-			{% assign main_chapter_groups = site.chapters | group_by: 'chapter_number' | sort: 'name', 'first' %}
-			{% for main_chapter_group in main_chapter_groups %}
+			{% assign chapters = site.chapters | sort: "number" %}
+			{% for chapter in chapters %}
 
-						{% assign sub_chapter_groups = main_chapter_group.items | group_by: 'subchapter_number' | sort: 'name', 'first' %}
-						{% for sub_chapter_group in sub_chapter_groups %}
-
-									{% assign sub_sub_chapter_groups = sub_chapter_group.items | group_by: 'subsubchapter_number' | sort: 'name', 'first' %}
-									{% for sub_sub_chapter_group in sub_sub_chapter_groups %}
-
-												{% assign chapters = sub_sub_chapter_group.items |sort: 'subsubsubchapter_number' %}
-												{% for chapter in chapters %}
-
-													{{ chapter.output }}
-													
-												{% endfor %}
-
-									{% endfor %}
-
-						{% endfor %}
+				{{ chapter.output }}
 
 			{% endfor %}
 

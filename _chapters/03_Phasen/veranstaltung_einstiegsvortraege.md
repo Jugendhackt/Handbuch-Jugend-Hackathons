@@ -1,8 +1,6 @@
 ---
 title: 					"Einstiegsvorträge"
-chapter_number: 		3
-subchapter_number:		9
-subsubchapter_number:	4
+number: 		"3.9.4"
 ---
 
 Nach der Begrüßung folgt eine Inputphase. Sie richtet sich an alle Teilnehmenden, weshalb sich ein zentrales Format anbietet. Hier geht es darum, die inhaltlichen Grundlagen für den Jugend-Hackathons darzustellen. Welches sind die thematischen Schwerpunkte? Warum wurden sie gewählt? Welche Daten liegen vor und warum sind sie interessant? Die letzte Frage sollte nicht allzu ausführlich erläutert werden, um den Teilnehmenden nicht die eigenständige Projektentwicklung abzunehmen. Allerdings werden die Jugendlichen unterschiedliche Kenntnisse mitbringen. Manche werden das Format des Hackathons kennen, andere nicht. Manche reisen mit Projektideen an, andere haben auch nach den Inputs noch keine Idee. 

@@ -1,7 +1,6 @@
 ---
 title: 					"Veranstaltungsvorbereitung"
-chapter_number: 		3
-subchapter_number:		8
+number: 		"3.8"
 ---
 
 Zur Veranstaltungsvorbereitung gehören letztlich alle oben genannten Punkte, insbesondere aber die in diesem Kapitel beschriebenen. Die Vorbereitung reicht von der Klärung der rechtlichen Rahmenbedingungen über die Raumreservierung, die Teilnehmenden- und Mentor/innen-Akquise bis hin zum Erstellen von Ablaufplänen, der Vorbereitung von Dekoration, Hardware und natürlich interessanter Datensätze; vom Fundraising bis hin zur Bestellung von Essen und Getränken. 

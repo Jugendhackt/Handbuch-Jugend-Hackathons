@@ -1,8 +1,6 @@
 ---
 title: 					"Rechtliches"
-chapter_number: 		3
-subchapter_number:		8
-subsubchapter_number:	1
+number: 		"3.8.1"
 ---
 
 Die Arbeit mit Minderjährigen bringt besondere rechtliche Anforderungen mit sich und erfordert deshalb spezielle Vorbereitungen. Vor allem die Aufsichtspflicht ist dabei ein entscheidender Punkt. Grundvoraussetzung einer Teilnahme am Jugend-Hackathon muss deshalb eine unterschriebene Einverständniserklärung der Eltern sein. Ließe man Jugendliche ohne diese am Event teilnehmen, machte man sich als Veranstalter strafbar. Es ist deshalb unabdingbar darauf zu bestehen und die Teilnehmenden sind im Zweifelsfall auch mehrfach daran zu erinnern.

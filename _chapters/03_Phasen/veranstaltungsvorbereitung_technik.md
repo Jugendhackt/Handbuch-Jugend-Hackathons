@@ -1,8 +1,6 @@
 ---
 title: 					"Technik"
-chapter_number: 		3
-subchapter_number:		8
-subsubchapter_number:	4
+number: 		"3.8.4"
 ---
 
 Die meisten Teilnehmenden reisen mit eigenem Equipment an. Sie bringen einen Laptop mit entsprechender Software und Entwicklungsumgebung (Programmiereditor etc.), Netzwerkkabel, Mehrfachstecker, LAN-Kabel aus ihrem eigenen Besitz mit. Darüber hinaus ist der Jugend-Hackathon ein Ort, zu dem die Jugendlichen auch gern eigene Hardware oder technologische Spielgeräte (etwa Lego Mindstorms) von zu Hause mitbringen können, damit sie sich darüber mit Gleichgesinnten austauschen oder diese Technik sogar in ihre Projekte integrieren können. Manche reisen vielleicht auch schon mit einer konkreten Idee diesbezüglich an.

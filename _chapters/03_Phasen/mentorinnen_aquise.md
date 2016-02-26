@@ -1,8 +1,6 @@
 ---
 title: 					"Akquise"
-chapter_number: 		3
-subchapter_number:		6
-subsubchapter_number:	1
+number: 		"3.6.1"
 ---
 
 Auch bei der Mentor/innen-Aquise lohnt es sich, vorab zu überlegen, wer für den eigenen Jugend-Hackathon geeignet sein könnte, wie bereits in Kapitel 3.2 beschrieben wurde. Nach einigen negativen Erfahrungen mit „fremden“ Mentor/innen, arbeiten wir bei „Jugend hackt“ inzwischen verstärkt nach der *Web-of-Trust-Methode*. Das bedeutet, dass wir versuchen, die Mentor/innen aus unserem direkten Bekanntenkreis zu rekrutieren oder eben auf Empfehlung von Menschen, denen wir vertrauen. Entscheidend ist in jedem Fall, die Motivation der Mentor/innen vorab zu klären. Warum möchten sie bei einem Jugend-Hackathon mitmachen? Bringen sie eine eigene Agenda mit, die unter Umständen nicht mit dem Konzept zusammenpasst? Und entscheidend ist, hat man den Eindruck, sie können sich und ihre eigenen Ideen so weit zurückstellen, dass sie den Jugendlichen den Entfaltungsfreiraum bieten können, den das Format erfordert? Um das herauszufinden, bieten sich persönliche Gespräche oder E-Mail-Interviews an sowie eine verpflichtende Teilnahme an der pädagogischen Mentor/innen-Schulung im Vorfeld des Jugend-Hackathons.
