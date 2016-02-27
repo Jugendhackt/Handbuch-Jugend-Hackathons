@@ -1,9 +1,6 @@
 ---
 title: 						"Abrechnung"
-chapter_number: 			3
-subchapter_number:			9
-subsubchapter_number:		18
-subsubsubchapter_number:	2
+number: 			"3.9.18.2"
 ---
 
 Die Abrechnung der Veranstaltung sollte ein gründlicher und gewissenhafter Vorgang sein, der entsprechend Zeit in Anspruch nimmt. Dies gilt insbesondere, wenn es diverse Geldgeber gibt, die unterschiedliche Ansprüche an die vorzuweisenden Belege und/oder Veranstaltungsdokumentationen stellen. Es ist die Aufgabe des Organisationsteams, im Vorfeld klare, möglichst schriftliche Absprachen mit den jeweiligen Förderern bezüglich des Abrechnungsverfahrens zu treffen, um nach innen Klarheit über den eigenen Arbeitsaufwand zu gewinnen und nach außen die Absprachen fristgerecht und inhaltlich vollständig einhalten zu können. Eine gewissenhafte Abrechnung erhöht zudem die Chancen für eine Wiederholung der Zusammenarbeit. Eine unsachgemäße Abrechnung hingegen wirft nicht nur ein schlechtes Licht auf die Veranstalter (und zieht im schlimmsten Fall Rückzahlungen bewilligter Fördersummen nach sich), sondern wirft möglicherweise auch ein schlechtes Licht auf die Branche der technikpositiven, gesellschaftskritischen Bildungsanbieter.

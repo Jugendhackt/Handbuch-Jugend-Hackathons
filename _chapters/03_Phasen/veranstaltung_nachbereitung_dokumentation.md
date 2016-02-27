@@ -1,9 +1,6 @@
 ---
 title: 						"Dokumentation"
-chapter_number: 			3
-subchapter_number:			9
-subsubchapter_number:		18
-subsubsubchapter_number:	1
+number: 			"3.9.18.1"
 ---
 
 Wie bereits mehrfach erwähnt, ist eine ausführliche Dokumentation des Jugend-Hackathons sehr wichtig, unter anderem für das eigene, bessere Verständnis, um die Ideen und Projekte der Teilnehmenden zu würdigen, als Material für eine professionelle Öffentlichkeitsarbeit und natürlich als Erfolgsbeleg für die Sponsoren. Es folgt eine Übersicht, welche Medienprodukte zu einer Dokumentation gehören können und für wen diese von Bedeutung sind.

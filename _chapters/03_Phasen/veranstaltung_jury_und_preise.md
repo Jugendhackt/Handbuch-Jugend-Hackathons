@@ -1,8 +1,6 @@
 ---
 title: 					"Jury und Preise"
-chapter_number: 		3
-subchapter_number:		9
-subsubchapter_number:	17
+number: 		"3.9.17"
 ---
 
 | Zeitlicher Umfang | Technik und Materialbedarf                                                                                                                                           | Verantwortlich |

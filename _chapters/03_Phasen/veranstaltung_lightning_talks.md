@@ -1,8 +1,6 @@
 ---
 title: 					"Lightning-Talks"
-chapter_number: 		3
-subchapter_number:		9
-subsubchapter_number:	14
+number: 		"3.9.14"
 ---
 
 | Zeitlicher Umfang | Technik und Materialbedarf                                                                                                                                           | Verantwortlich |

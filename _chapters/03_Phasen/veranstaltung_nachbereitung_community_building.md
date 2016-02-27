@@ -1,9 +1,6 @@
 ---
 title: 						"Community-Building"
-chapter_number: 			3
-subchapter_number:			9
-subsubchapter_number:		18
-subsubsubchapter_number:	3
+number: 			"3.9.18.3"
 ---
 
 Eine Rückmeldung, die wir immer wieder von Teilnehmenden bei „Jugend hackt“ bekommen, ist, dass es für sie das erste Mal ist, dass sie sich mit Gleichgesinnten über ihre Technikbegeisterung austauschen können. Dieser Austausch muss sich keinesfalls nur auf den Zeitraum des Hackathons beschränken, im Gegenteil. Wenn darüber hinaus Kontakt zwischen den Jugendlichen besteht, Freundschaften geschlossen werden oder gemeinsam das entstandene Projekt weiterentwickelt wird, dann ist das ein großer Erfolg für den Hackathon. Es lohnt sich, den Jugendlichen diese Möglichkeiten zu geben, zum Beispiel durch die Einführung gemeinsamer Kommunikationskanäle wie Slack oder IRC. Je nach Ressourcen und eigenen Zielen kann dies strukturiert, in Form von professionellem Community-Management begleitet oder einfach als offener Raum und freies Angebot bereitgestellt werden.

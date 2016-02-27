@@ -1,9 +1,6 @@
 ---
 title: 						"Exkurs: Evaluation"
-chapter_number: 			3
-subchapter_number:			9
-subsubchapter_number:		18
-subsubsubchapter_number:	1
+number: 			"3.9.18.1"
 type:						excursion
 ---
 

@@ -1,8 +1,6 @@
 ---
 title: 					"Übung der Präsentationen"
-chapter_number: 		3
-subchapter_number:		9
-subsubchapter_number:	15
+number: 		"3.9.15"
 ---
 
 | Zeitlicher Umfang | Technik und Materialbedarf                                                                                                                                           | Verantwortlich |

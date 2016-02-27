@@ -1,8 +1,6 @@
 ---
 title: 					"Öffentliche Präsentation"
-chapter_number: 		3
-subchapter_number:		9
-subsubchapter_number:	16
+number: 		"3.9.16"
 ---
 
 | Zeitlicher Umfang | Technik und Materialbedarf                                                                                                                                           | Verantwortlich |
