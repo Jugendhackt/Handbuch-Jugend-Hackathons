@@ -1,11 +1,16 @@
 
-@font-face { font-family: 'fira-sans-semi-bold'; 	src: url('../fonts/FiraSans-SemiBold.otf')		format('opentype'); }
-@font-face { font-family: 'fira-sans-light'; 		src: url('../fonts/FiraSans-Light.otf')			format('opentype'); }
-@font-face { font-family: 'fira-sans-regular'; 		src: url('../fonts/FiraSans-Regular.otf')		format('opentype'); }
+@font-face { font-family: 'fira-sans-semi-bold'; 		src: url('../fonts/FiraSans-SemiBold.otf')		format('opentype'); }
+@font-face { font-family: 'fira-sans-light'; 			src: url('../fonts/FiraSans-Light.otf')			format('opentype'); }
+@font-face { font-family: 'fira-sans-regular'; 			src: url('../fonts/FiraSans-Regular.otf')		format('opentype'); }
+
+@font-face { font-family: 'print-no'; 					src: url('../fonts/Pinto-NO_01.otf')			format('opentype'); }
+@font-face { font-family: 'cabin-sketch-regular'; 		src: url('../fonts/CabinSketch-Regular.otf')	format('opentype'); }
 
 
 /*
 	color:
+
+	teal:				#006e83;
 
 	blue-deep:			#00b9cb;
 	blue-medium:		#91e3f2;
@@ -27,7 +32,7 @@ html {
 	background:			#fff;
 }
 
-h1,h2,h3,h4 {
+h1,h2,h3,h4,h5,h6 {
 	font-family: 		fira-sans-regular;
 	font-weight:		normal;
 }
@@ -45,7 +50,7 @@ ul {
 a {
 	text-decoration:	none;
 	color:				inherit;
-	color:				#4488ff;
+	color:				#00b9cb;
 	font-family:		fira-sans-regular;
 }
 
@@ -59,9 +64,9 @@ header {
 	position:			fixed;
 	top:				0;
 	left:				0;
-	width:				23rem;
+	width:				25rem;
 	bottom:				15rem;
-	padding:			1rem;
+	padding:			0rem;
 }
 
 aside {
@@ -75,21 +80,84 @@ aside {
 	font-size:			0.8rem;
 }
 
+#logo {
+	position:			absolute;
+	background:			#f97134;
+	width:				24rem;
+	height:				5rem;
+	z-index:			999;
+}
+
+#logo:after {
+	content:			'';
+	position:			absolute;
+	left:				100%;
+	top:				0;
+	height:				0;
+	width:				0;
+	font-size:			0.25rem;
+	border-top:			3em solid #f97134;
+	border-left:		2em solid #f97134;
+	border-bottom:		3em solid transparent;
+	border-right:		2em solid transparent;
+}
+
+#logo h1 {
+	position:			absolute;
+	bottom:				0;
+	right:				0;
+	font-size:			1.5rem;
+	transform:			rotate(-5deg);
+	transform-origin:	100% 100%;
+	color:				#fff;
+	background:			#f97134;
+	margin:				0rem;
+	width:				18rem;
+	padding-right:		7rem;
+	padding-top:		2rem;
+	padding-bottom:		1rem;
+	text-align:			right;
+	font-family:		cabin-sketch-regular;
+}
+
+
+#logo h1:before {
+	content:			'';
+	display:			inline-block;
+	height:				1rem;
+	width:				8rem;
+}
+
+#logo h1:after {
+	content:			'';
+	display:			block;
+	position:			absolute;
+	height:				6.5rem;
+	width:				6.5rem;
+	bottom:				-1.7rem;
+	right:				1rem;
+	background-image:	url('../images/Tocbot4-06.png');
+	background-repeat:	no-repeat;
+	background-position:100% 100%;
+	background-size:	6.5rem auto;
+}
+
 #toc {
 	position:			absolute;
-	top:				6rem;
+	top:				5rem;
 	left:				0.5rem;
 	right:				1rem;
 	bottom:				0;
 	overflow-y:			scroll;
 	overflow-x:			hidden;
+	padding-top:		1rem;
 }
 
 #toc li {
 	display:			block;
 	white-space:		normal;
-	text-align:			right;
 	padding:			0.125rem 0;
+	padding-left:		0.5rem;
 	clear:				both;
 }
 
@@ -113,7 +181,32 @@ aside {
 #toc li.depth-1 a{
 	display:			inline-block;
 	min-width:			8rem;
+	padding-left:		0.5rem;
 }
+
+
+#toc li .chapter-number {
+	float:				left;
+	text-align:			left;
+}
+
+#toc li.depth-3 .chapter-number .digit,
+#toc li.depth-4 .chapter-number .digit,
+#toc li.depth-5 .chapter-number .digit {
+	opacity:			0.3;
+}
+
+#toc li.depth-3 .chapter-number .digit + .digit + .digit,
+#toc li.depth-4 .chapter-number .digit + .digit + .digit,
+#toc li.depth-5 .chapter-number .digit + .digit + .digit {
+	opacity:			1 !important;
+}
+
+#toc .chapter-title {
+	display:			block;
+	margin-left:		5rem;
+}
+
 
 
 /*colors*/
@@ -179,12 +272,8 @@ aside {
 	margin:				0;
 }
 
-#toc li .chapter-number {
-	float:				left;
-	text-align:			left;
-	margin-right:		2rem;
-	margin-left:		0.5rem;
-}
+
+
 
 #toc > li > ul  {
 	margin-bottom:		4rem;
@@ -210,12 +299,73 @@ section.main-content {
 }
 
 
+section.main-content h2,
+section.main-content h3,
+section.main-content h4,
+section.main-content h5 {
+	font-family:		print-no, sans-serif;
+	font-size:			1.6rem;
+	margin:				0;
+}
+
+
+section.main-content section:nth-of-type(2n) h2,
+section.main-content section:nth-of-type(2n) h3,
+section.main-content section:nth-of-type(2n) h4,
+section.main-content section:nth-of-type(2n) h5{
+	color:				#f97134;
+}
+
+
+section.main-content section:nth-of-type(2n+1) h2,
+section.main-content section:nth-of-type(2n+1) h3,
+section.main-content section:nth-of-type(2n+1) h4,
+section.main-content section:nth-of-type(2n+1) h5{
+	color:				#00b9cb;
+}
+
 section.main-content h2 {
 	margin-top:			5rem;
 }
 
+section.main-content h6{
+	color:				inherit;
+	margin:				0;
+	font-size:			1em;
+	font-family:		fira-sans-semi-bold;
+	margin-bottom:		0;
+}
+
+section.main-content h6 + p {
+	margin-top:			0;
+}
+
+section.main-content strong {
+	font-weight:		normal;
+	font-family: 		fira-sans-regular;
+}
 
 section.main-content ul {
 	list-style: 		disc outside none;
-	padding-left:		3rem;
+	padding-left:		1rem;
+}
+
+section.main-content ul > li {
+	padding-left:		1rem;
+}
+
+section.main-content article.chapter {
+	margin-bottom:		3rem;
+}
+
+section.main-content section:nth-of-type(2n+1) article.excursion {
+	color:				#00b9cb;
+}
+
+section.main-content section:nth-of-type(2n) article.excursion {
+	color:				#f97134;
+}
+
+section.main-content article.excursion p:nth-of-type(1){
+	color:				#000;
 }

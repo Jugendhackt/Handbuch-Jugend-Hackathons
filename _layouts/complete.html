@@ -12,13 +12,24 @@
 
 		<section class="main-content" >
 
-			{% assign chapters = site.chapters | sort: "number" %}
-			{% for chapter in chapters %}
+		{% assign current_chapter = '1' %}
+		{% assign chapters = site.chapters | sort: 'number' %}
 
-				{{ chapter.output }}
+			<section class ="chapter chapter-1">
+
+			{% for chapter in chapters %}
+				{% assign main_chapter = chapter.number | split: "." | first %}
+				{% if main_chapter != current_chapter %}
+					{% assign current_chapter = main_chapter %}
+					</section>
+					<section class ="main-chapter chapter-{{current_chapter}}">	
+				{% endif %}
+						{{ chapter.output }}
 
 			{% endfor %}
 
+			</section>
+			
 		</section>
 
 		{% include footer.html %}

@@ -1,7 +1,7 @@
 ---
 title: 					"Exkurs: Offene Daten"
 number: 		"3.8.3"
-type: 					excursion
+type: "excursion"
 ---
 
 „Jugend hackt“ wird von der Open Knowledge Foundation Deutschland mit veranstaltet und sie setzt sich für die Öffnung und Nutzung gesellschaftlich relevanter Daten ein. Warum offene Daten ein wichtiges Thema sind und auch spannend für Jugend-Hackathons sein können, erklärt Daniel Dietrich, Vorstandsmitglied bei der Open Knowledge Foundation Deutschland und quasi ein Open-Data-Pionier.

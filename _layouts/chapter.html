@@ -1,7 +1,28 @@
-<article id = "chapter-{{page.number}}">
-	<h{{ page.number | split: "." | size | plus: 1}}>
-		<span class ="chapter-number">{{page.number}}</span>
-		{{ page.title }}
-	</h{{ page.number | split: "." | size | plus: 1}}>
-	{{page.content | markdownify}}
-</article>
+{% if page.type != 'excursion' %}
+	{% assign size = page.content | strip | size %}
+	{% if size != 0 %}
+		<article id = "chapter-{{page.number}}" class ="chapter">
+			<h{{ page.number | split: "." | size | plus: 1}}>
+				<span class ="chapter-number">{{page.number}}</span>
+				{{ page.title }}
+			</h{{ page.number | split: "." | size | plus: 1}}>
+			{{page.content | markdownify}}
+		</article>
+	{% else %}
+		<h{{ page.number | split: "." | size | plus: 1}}>
+				<span class ="chapter-number">{{page.number}}</span>
+				{{ page.title }}
+		</h{{ page.number | split: "." | size | plus: 1}}>
+	{% endif %}
+
+{% endif %}
+
+{% if page.type == 'excursion' %}
+	<article id = "excursion-{{page.number}}" class = "excursion">
+		<h5>
+			<span class ="chapter-number">{{page.number}}</span>
+			{{ page.title }}
+		</h5>
+		{{page.content | markdownify}}
+	</article>
+{% endif %}

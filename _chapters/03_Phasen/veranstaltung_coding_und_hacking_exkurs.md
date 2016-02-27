@@ -1,7 +1,7 @@
 ---
 title: 					"Flow"
 number: 		"3.9.10"
-type:					excursion
+type:					"excursion"
 ---
 
 Interview mit Björn und Andreas, Mentoren von „Jugend hackt“, zum Thema Flow:

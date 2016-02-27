@@ -2,13 +2,18 @@
 	{% assign chapters = site.chapters | sort: "number" %}
 	{% for chapter in chapters %}
 
+			{% assign number_arr = chapter.number | split: "." %}
 
-				<li class = "chapter-{{chapter.number | split: "." | first}} depth-{{chapter.number | split: "." | size}}">
+			{% if chapter.type != 'excursion' %}
+				<li class = "chapter-{{number_arr | first}} depth-{{number_arr | size}}">
 					<a href ="#chapter-{{chapter.number}}">
-						<span class = "chapter-number">	{{chapter.number}}				</span> 
+						<span class = "chapter-number">
+							{% for digit in number_arr %}<span class ="digit">{{ digit }}{% if forloop.last != true %}.{% endif %}</span>{% endfor %}
+						</span>
 						<span class = "chapter-title">	{{chapter.title | markdownify}}	</span>
 					</a>
 				</li>
+			{% endif %}
 
 	{% endfor %}
 </ul>
