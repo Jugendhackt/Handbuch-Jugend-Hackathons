@@ -69,7 +69,7 @@ header {
 	padding:			0rem;
 }
 
-aside {
+aside.left {
 	position:			fixed;
 	left:				0;
 	bottom:				0;
@@ -78,6 +78,26 @@ aside {
 	height:				auto;
 	text-align:			justify;
 	font-size:			0.8rem;
+}
+
+aside.right {
+	position:			fixed;
+	top:				0;
+	right:				0;
+	width:				4rem;
+	text-align:			center;
+}
+
+aside.right * {
+	display:			block;
+	font-size:			1.5rem;
+	margin:				1rem auto;
+	width:				2em;
+	height:				2em;
+	border-radius:		2em;
+	line-height:		2em;
+	color:				#fff;
+	background:			#006e83;
 }
 
 #logo {
@@ -106,7 +126,7 @@ aside {
 	position:			absolute;
 	bottom:				0;
 	right:				0;
-	font-size:			1.5rem;
+	font-size:			1.8rem;
 	transform:			rotate(-5deg);
 	transform-origin:	100% 100%;
 	color:				#fff;
@@ -294,7 +314,7 @@ section.main-content {
 	display:			block;
 	max-width:			40rem;
 	margin-left:		25rem;
-	padding-right:		2rem;
+	padding-right:		4rem;
 	padding-left:		4rem;
 }
 
@@ -354,8 +374,17 @@ section.main-content ul > li {
 	padding-left:		1rem;
 }
 
+
+section.main-content ol {
+	background:			#000;
+}
+
 section.main-content article.chapter {
 	margin-bottom:		3rem;
+}
+
+section.main-content article.chapter p {
+	text-align:			justify;
 }
 
 section.main-content section:nth-of-type(2n+1) article.excursion {
@@ -368,4 +397,33 @@ section.main-content section:nth-of-type(2n) article.excursion {
 
 section.main-content article.excursion p:nth-of-type(1){
 	color:				#000;
+	font-family: 		fira-sans-light;
+}
+
+
+section.main-content table {
+	border-collapse: 	collapse;
+	font-size:			0.8rem;
+	margin:				1rem 0;
+	width:				100%;
+}
+
+section.main-content table th{
+	background:			#00b9cb;
+	color:				#fff;
+	text-transform: 	uppercase;
+	padding:			0.5rem;
+	font-family:		fira-sans-regular;
+}
+
+section.main-content table tr:nth-of-type(2n) {
+	background:			#91e3f2;
+}
+
+section.main-content table tr:nth-of-type(2n+1) {
+	background:			#c7eaf1;
+}
+
+section.main-content table td {
+	padding:			0.5rem;
 }
