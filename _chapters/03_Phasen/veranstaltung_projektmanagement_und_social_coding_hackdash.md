@@ -1,0 +1,10 @@
+---
+title: 						"HackDash"
+number: 			"3.9.9.1"
+---
+
+HackDash ([http://www.hackdash.org](http://www.hackdash.org)) ist eine Web-App, die speziell für Hackathons konzipiert wurde. Dort lassen sich schnell und benutzerfreundlich alle Projekte eines Hackathons eintragen. Zur Anmeldung benötigt man lediglich einen GitHub- oder Twitter-Account. Auf der Plattform lassen sich dann Events anlegen und daraufhin als Administrator/in verwalten. Befindet sich das Event im Modus „offen“, können darin Projekte angelegt und angepasst werden. Jedes Projekt kann mit Bild, Beschreibungstext, Status, weiterführenden Links und beteiligten Teammitgliedern versehen werden. Wenn HackDash von allen Teilnehmenden regelmäßig aktualisiert wird, hat man eine gute Übersicht über alle laufenden Projekte und ihren jeweiligen Status. Diese Informationen sind für den reibungslosen Ablauf des Hackathons von immens wichtiger Bedeutung. Die gesamte Planung der Präsentationsübung (Kapitel 3.9.14) und des tatsächlichen Ablaufs der Abschlusspräsentation (Kapitel 3.9.15) hängt von der Vollständigkeit dieser Informationen ab. Sobald sich alle Projekte im richtigen Event auf HackDash befinden, lässt sich dieses vom Administrator in den Modus „Geschlossen“ versetzen. Es können dann keine neuen Projekte innerhalb des Events angelegt werden.
+
+HackDash bietet über die Seite [http://gohackdash.org/](http://gohackdash.org/) außerdem die Möglichkeit eines Publikumsvotings. So lässt sich schnell und einfach das Publikum während der Abschlusspräsentation mit einbeziehen.
+
+Nicht nur während der Veranstaltung, auch für eine gute Dokumentation im Nachgang sind möglichst vollständige Informationen über die entstandenen Projekte entscheidend. Es lohnt sich also, Teilnehmende und Mentor/innen dazu anzuhalten, ihre Projekte möglichst vollständig und sorgfältig darzustellen.

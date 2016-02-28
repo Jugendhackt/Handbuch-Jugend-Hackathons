@@ -1,7 +1,6 @@
 ---
-title: 				"Das Format Hackathon"
-chapter_number: 	2
-subchapter_number:	5
+title: "Das Format Hackathon"
+number: "2.5"
 ---
 
 Hackathons zeichnen sich durch ihre klare Formatierung und ihre Produktorientierung aus: Binnen eines festgelegten Zeitraums wird zu meist thematisch eingegrenzten Inhalten in interdisziplinären Teams an einem konkreten Produkt gearbeitet. Dieses wird am Ende des Prozesses, der über Brainstorming und Hacking bis zur Präsentation verläuft, einer (Teil-)Öffentlichkeit vorgestellt. Dabei ist festgelegt, dass tatsächlich lauffähige Soft- und/oder Hardware-Hacks gezeigt werden müssen, die sich aber durchaus noch in einem prototypischen Stadium befinden dürfen.

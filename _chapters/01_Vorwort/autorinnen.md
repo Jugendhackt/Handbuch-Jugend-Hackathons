@@ -1,7 +1,6 @@
 ---
 title: 				"Über die Autorinnen"
-chapter_number: 	1
-subchapter_number:	1
+number: 	"1.1"
 ---
 
 Maria Reimer, Daniel Seitz und Paula Glaser arbeiten mit Herz und Seele für das Förderprogramm „Jugend hackt“, das als Vorlage für dieses Handbuch diente. „Jugend hackt“ wird von der Open Knowledge Foundation Deutschland e.V. und mediale pfade.org – Verein für Medienbildung veranstaltet. Die Open Knowledge Foundation Deutschland setzt sich für freies Wissen ein und baut mit an einer digitalen Infrastruktur für zivilgesellschaftliches Engagement. mediale pfade entwickelt innovative Konzepte, um neue mediale Pfade des Lernens und der Beteiligung zu begehen. 

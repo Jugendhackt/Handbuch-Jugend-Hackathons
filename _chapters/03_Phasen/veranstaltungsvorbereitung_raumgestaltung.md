@@ -1,0 +1,9 @@
+---
+title: 					"Raumgestaltung"
+number: 		"3.8.5"
+---
+
+Der Raum trägt maßgeblich zum Erfolg der Veranstaltung bei, deswegen sollte bei der Gestaltung auf allen Ebenen viel Vorbereitung und bei der Umsetzung viel Liebe einfließen. Wie im „Kapitel 3.7.2 Atmosphäre“ beschrieben, kann durch Gestaltung viel getan werden, um einladend und offen zu wirken und so zentrale Ansprüche an die Veranstaltung zu erfüllen. Je nach entwickelter CI (*Corporate Identity*) der Veranstaltung können hier zusätzliche Identifikationspunkte geschaffen werden, indem mit Gestaltungselementen z.B. vom Flyer weitergearbeitet wird und so Wände, Decken und Tische gestaltet werden.
+
+„Leerräume statt Lehrräume“ ist ein kluger Anspruch von dem Erwachsenenbildner Guido Brombach, der schön verdeutlicht, wie Räume möglichst flexibel und stets variabel nach den Anforderungen der Teilnehmenden und deren Zielen gestaltet werden können sollten und nicht als fixer Lehrraum das (Lern-)Setting definieren sollten. Da bei Jugend-Hackathons die Entwicklung der Projekte während der Veranstaltung ganz offen ist, muss auch die Raumsituation diese Offenheit hergeben. Möbel sollten flexibel veränderbar sein, z.B. zu immer neuen Tischgruppen je nach Entwicklungsstand verändert werden können. Dementsprechend sollte auch die technische Infrastruktur wie Strom, LAN etc. flexibel auf diese Ansprüche eingestellt werden können.
+Generell sollte alle unterstützende Technik – 3D-Drucker, Grundausstattung an Hardware wie Raspberry Pis, Sensoren etc. – an einem festen Ort frei zugänglich sein, ggf. über eine Ausgabe, um den Überblick zu behalten.
