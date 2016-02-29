@@ -4,14 +4,14 @@
 		<article id = "chapter-{{page.number}}" class ="chapter">
 			<h{{ page.number | split: "." | size | plus: 1}}>
 				<span class ="chapter-number">{{page.number}}</span>
-				{{ page.title }}
+				{{ page.title | markdownify }}
 			</h{{ page.number | split: "." | size | plus: 1}}>
 			{{page.content | markdownify}}
 		</article>
 	{% else %}
 		<h{{ page.number | split: "." | size | plus: 1}}  id = "chapter-{{page.number}}">
 				<span class ="chapter-number">{{page.number}}</span>
-				{{ page.title }}
+				{{ page.title | markdownify}}
 		</h{{ page.number | split: "." | size | plus: 1}}>
 	{% endif %}
 
@@ -21,7 +21,7 @@
 	<article id = "excursion-{{page.number}}" class = "excursion">
 		<h5>
 			<span class ="chapter-number">{{page.number}}</span>
-			{{ page.title }}
+			{{ page.title | markdownify}}
 		</h5>
 		{{page.content | markdownify}}
 	</article>

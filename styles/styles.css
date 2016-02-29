@@ -422,7 +422,13 @@ aside.right * {
 	But markdown semms to always reder them, so this is a work around.
 */
 
-#toc li a p {
+#toc li a p,
+h1 p,
+h2 p,
+h3 p,
+h4 p,
+h5 p,
+h6 p {
 	display:			inline;
 	margin:				0;
 }
@@ -581,3 +587,29 @@ section.main-content table tr:nth-of-type(2n+1) {
 section.main-content table td {
 	padding:			0.5rem;
 }
+
+
+
+.narrow section.main-content table {
+	display:			block;
+	position:			relative;
+	width:				19rem;
+	overflow-x:			scroll;
+	margin:				0 -0.5rem;
+}
+
+.narrow section.main-content table:before{
+	content:			'';
+	position:			absolute;
+	top:				0;
+	bottom:				0;
+	width:				1rem;
+	box-shadow:			0 0 0.5rem rgba(0,0,0,0.5);
+}
+
+.narrow section.main-content table:before{
+	left:				-1rem;
+}
+
+
+
