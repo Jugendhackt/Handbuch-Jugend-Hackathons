@@ -16,14 +16,25 @@ hbjh.run([
 	function($rootScope, $document, $window, $timeout){
 
 
-		$rootScope.show_menu = false
+		$rootScope.show_toc = false
 
-		$rootScope.$watch('show_menu', function(x){
-			console.log(x)
-		})
 
 		$rootScope.goBack = function() {
 		    window.history.back()
+		}
+x
+		var last_scroll_pos
+
+		$rootScope.toggleTOC = function(){
+			$rootScope.show_toc = !$rootScope.show_toc
+
+
+			if($rootScope.show_toc){
+				last_scroll_pos = html[0].scrollTop
+
+			}else{
+				html[0].scrollTop = last_scroll_pos
+			}
 		}
 
 		//checking if page has scroll far enough to slim down the header:
@@ -66,6 +77,7 @@ hbjh.run([
 				body.removeClass('narrow')
 				html.css('font-size', 'inherit')
 			}
+			$rootScope.$apply()
 		}
 		
 		adjustContentWidth()
