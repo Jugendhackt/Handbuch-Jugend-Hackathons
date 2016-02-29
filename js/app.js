@@ -22,7 +22,7 @@ hbjh.run([
 		$rootScope.goBack = function() {
 		    window.history.back()
 		}
-x
+
 		var last_scroll_pos
 
 		$rootScope.toggleTOC = function(){
