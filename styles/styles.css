@@ -28,9 +28,18 @@ html {
 	margin:				0;
 	min-height:			100%;
 	font-family:		fira-sans-light, sans-serif;
-	overflow-x:			hidden;
+	overflow:			auto;
 	background:			#fff;
+	scroll-behavior: 	smooth;
+	opacity:			1;
 }
+
+
+body.narrow {
+	padding-top:		5rem;
+	height:				100%;
+}
+
 
 h1,h2,h3,h4,h5,h6 {
 	font-family: 		fira-sans-regular;
@@ -49,10 +58,51 @@ ul {
 
 a {
 	text-decoration:	none;
+	position:			relative;
 	color:				inherit;
 	color:				#00b9cb;
 	font-family:		fira-sans-regular;
+	z-index:			1;
+	animation:			none;
 }
+
+.narrow a:hover:before {
+	position:			absolute;
+	content:			'';
+	z-index:			-1;
+	top:				50%;
+	left:				50%;
+	height:				1px;
+	width:				1px;
+	border-radius:		100rem;
+	opacity:			0;
+	animation:			pulse 600ms;
+}
+
+	@keyframes pulse{
+
+		0% 	{	
+			box-shadow:	0 0 0 0em #000;
+			opacity:	0.6;
+		}
+		100% {
+			box-shadow:	0 0 0 1em #000;
+			opacity:	0;
+		}
+	}
+
+	@webkit-keyframes pulse{
+
+		0% 	{	
+			box-shadow:	0 0 0 0em #000;
+			opacity:	0.6;
+		}
+		100% {
+			box-shadow:	0 0 0 1em #000;
+			opacity:	0;
+		}
+	}
+
 
 strong {
 	font-family:		fira-sans-semi-bold;
@@ -64,48 +114,109 @@ header {
 	position:			fixed;
 	top:				0;
 	left:				0;
-	width:				25rem;
+	width:				24rem;
 	bottom:				15rem;
 	padding:			0rem;
+	z-index:			99999;
+	height:				5rem;
+}
+
+.narrow header {
+	bottom:				auto;
+	height:				4rem;
+	width:				20rem;
 }
 
 aside.left {
+	top:				5rem;
 	position:			fixed;
 	left:				0;
 	bottom:				0;
-	width:				23rem;
-	padding:			1rem;
+	width:				24rem;
+	padding:			0;
 	height:				auto;
 	text-align:			justify;
 	font-size:			0.8rem;
 }
 
+aside.left .content {
+	position:			absolute;
+	bottom:				0;
+	padding:			1rem;
+}
+
+
+.narrow aside.left {
+	position:			static;
+	width:				auto;
+	padding:			0 1rem;
+}
+
+.narrow aside.left .content {
+	position:			static;
+	padding:			0;
+}
+
+
+
 aside.right {
 	position:			fixed;
 	top:				0;
 	right:				0;
+	bottom:				0;
 	width:				4rem;
 	text-align:			center;
 }
+
+
 
 aside.right * {
 	display:			block;
 	font-size:			1.5rem;
 	margin:				1rem auto;
 	width:				2em;
-	height:				2em;
+	height:				auto;
 	border-radius:		2em;
 	line-height:		2em;
 	color:				#fff;
 	background:			#006e83;
+	text-align:			center;
+	cursor:				pointer;
 }
+
+.narrow aside.right {
+	position:			absolute;
+	top:				0;
+	right:				0;
+	width:				10rem;
+	height:				2.5rem;
+	text-align:			right;
+	background:			#fff;
+}
+
+.narrow aside.right * {
+	display:			inline-block;
+	background:			transparent;
+	border-radius:		0;
+	color:				#f97134;
+	margin:				0 0rem;
+	width:				1.5em;
+}
+
 
 #logo {
 	position:			absolute;
 	background:			#f97134;
-	width:				24rem;
-	height:				5rem;
+	width:				24em;
+	height:				5em;
 	z-index:			999;
+	font-size:			1em;
+}
+
+.narrow #logo {
+	position:			relative;
+	display:			inline-block;
+	font-size:			0.5em;
 }
 
 #logo:after {
@@ -115,7 +226,7 @@ aside.right * {
 	top:				0;
 	height:				0;
 	width:				0;
-	font-size:			0.25rem;
+	font-size:			0.25em;
 	border-top:			3em solid #f97134;
 	border-left:		2em solid #f97134;
 	border-bottom:		3em solid transparent;
@@ -126,16 +237,16 @@ aside.right * {
 	position:			absolute;
 	bottom:				0;
 	right:				0;
-	font-size:			1.8rem;
+	font-size:			1.8em;
 	transform:			rotate(-5deg);
 	transform-origin:	100% 100%;
 	color:				#fff;
 	background:			#f97134;
-	margin:				0rem;
-	width:				18rem;
-	padding-right:		7rem;
-	padding-top:		2rem;
-	padding-bottom:		1rem;
+	margin:				0em;
+	width:				10em;
+	padding-right:		4em;
+	padding-top:		1em;
+	padding-bottom:		0.5em;
 	text-align:			right;
 	font-family:		cabin-sketch-regular;
 }
@@ -144,33 +255,52 @@ aside.right * {
 #logo h1:before {
 	content:			'';
 	display:			inline-block;
-	height:				1rem;
-	width:				8rem;
+	height:				1em;
+	width:				4em;
 }
 
 #logo h1:after {
 	content:			'';
 	display:			block;
 	position:			absolute;
-	height:				6.5rem;
-	width:				6.5rem;
-	bottom:				-1.7rem;
-	right:				1rem;
+	height:				3.6em;
+	width:				3.6em;
+	bottom:				-0.95em;
+	right:				0.5em;
 	background-image:	url('../images/Tocbot4-06.png');
 	background-repeat:	no-repeat;
 	background-position:100% 100%;
-	background-size:	6.5rem auto;
+	background-size:	3.6em auto;
 }
 
 #toc {
 	position:			absolute;
-	top:				5rem;
-	left:				0.5rem;
-	right:				1rem;
-	bottom:				0;
+	top:				0;
+	bottom:				12rem;
+	padding:			0;
+	padding-left:		1rem;
+	padding-top:		1rem;
 	overflow-y:			scroll;
 	overflow-x:			hidden;
-	padding-top:		1rem;
+}
+
+.narrow #toc {
+	display:			none;
+}
+
+.show-toc .narrow #toc {
+	display:			block;
+	position:			fixed;
+	top:				0;
+	left:				0;
+	right:				0;
+	bottom:				0;
+	height:				auto;
+	overflow-x:			hidden;
+	overflow-y:			scroll;
+	background:			#fff;
+	padding-top:		5rem;
+	z-index:			50;
 }
 
 #toc li {
@@ -198,10 +328,15 @@ aside.right * {
 	margin-right:		0.5rem;
 }
 
+#toc li.depth-1 .chapter-title {
+	margin-left:		0;
+}
+
 #toc li.depth-1 a{
 	display:			inline-block;
 	min-width:			8rem;
 	padding-left:		0.5rem;
+	font-family:		fira-sans-regular;
 }
 
 
@@ -318,6 +453,24 @@ section.main-content {
 	padding-left:		4rem;
 }
 
+.narrow section.main-content {
+	margin:				0;
+	padding:			1rem;
+	padding-bottom:		4rem;
+	overflow-x:			hidden;
+	margin-top:			-4rem;
+}
+
+.narrow section.main-content [id]:before {
+  display: 				block; 
+  content: 				" "; 
+  margin-top: 			-5.5rem; 
+  height: 				5.5rem; 
+  visibility: 			hidden; 
+  margin-right:			auto;
+  width:				1px;
+}
+
 
 section.main-content h2,
 section.main-content h3,
@@ -375,10 +528,6 @@ section.main-content ul > li {
 }
 
 
-section.main-content ol {
-	background:			#000;
-}
-
 section.main-content article.chapter {
 	margin-bottom:		3rem;
 }
@@ -386,6 +535,11 @@ section.main-content article.chapter {
 section.main-content article.chapter p {
 	text-align:			justify;
 }
+
+.narrow section.main-content article.chapter p {
+	text-align:			left;
+}
+
 
 section.main-content section:nth-of-type(2n+1) article.excursion {
 	color:				#00b9cb;

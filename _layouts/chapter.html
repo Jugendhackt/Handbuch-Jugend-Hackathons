@@ -9,7 +9,7 @@
 			{{page.content | markdownify}}
 		</article>
 	{% else %}
-		<h{{ page.number | split: "." | size | plus: 1}}>
+		<h{{ page.number | split: "." | size | plus: 1}}  id = "chapter-{{page.number}}">
 				<span class ="chapter-number">{{page.number}}</span>
 				{{ page.title }}
 		</h{{ page.number | split: "." | size | plus: 1}}>
