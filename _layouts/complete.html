@@ -63,7 +63,7 @@
 		<aside class 		= "left">
 			{% include toc.html %}
 			<div class ="content">
-				{{ content }}
+				{{ page.content | markdownify }}
 			</div>
 		</aside>
 
