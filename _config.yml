@@ -1,18 +1,21 @@
 baseurl: "/Handbuch-Jugend-Hackathons"
 
 collections:
-    - 01_Vorwort
-    - 02_Einleitung
-    - 03_Phasen 
-
-collections:
-    chapters:
+    chapters_de:
         output: true
-        permalink: /chapters/:path/
+        permalink: /chapters_de/:path/
+        language: de
+    chapters_nl:
+        output: true
+        permalink: /chapters_nl/:path/
+        language: nl
 
 defaults:
   - scope:
-        path: ""
-        type: chapters
+        type: chapters_de
+    values:
+        layout: chapter
+  - scope:
+        type: chapters_nl
     values:
         layout: chapter

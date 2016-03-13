@@ -37,6 +37,10 @@ hbjh.run([
 			}
 		}
 
+		$rootScope.toggleLang = function(){
+			$rootScope.showLang = !$rootScope.showLang
+		}
+
 		//checking if page has scroll far enough to slim down the header:
 
 		var body 	= $document.find('body'),

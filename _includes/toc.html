@@ -1,11 +1,19 @@
 <ul id ="toc" ng-click	= "toggleTOC()">
 
+	{% assign lang			= page.language ? page.language : "de" %}
+
+	{% for collection in site.collections %}
+		{% if collection.language == lang %}
+			{% assign chapters 		= collection.docs %}				
+		{% endif%}
+	{% endfor %}
+
 	{% capture cache %}
 		{% assign A1 = "" | split: "" %}
 		{% assign A2 = "" | split: "" | push: 0 %}
 		{% assign A3 = "" | split: "" | push: 0 %}
 		{% assign A4 = "" | split: "" | push: 0 %}
-		{% for chapter in site.chapters %}
+		{% for chapter in chapters %}
 				{% assign numbers =  chapter.number | split: "." %}
 				{% assign size = numbers | size %}
 				{% if size > 0 %} 
@@ -44,7 +52,7 @@
 									{% endif %}
 								{% endif %}
 							{% endif %}
-						{% assign matching_chapters = site.chapters | where: "number", chapter_number %}
+						{% assign matching_chapters = chapters | where: "number", chapter_number %}
 						{% for chapter in matching_chapters | sort: "type" %}
 							{% assign sorted_chapters = sorted_chapters | push: chapter %}						
 						{% endfor %}

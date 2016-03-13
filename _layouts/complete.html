@@ -2,6 +2,24 @@
 <html lang="de-de" ng-app = "handbook" ng-class	= "{'show-toc': show_toc}">
 	{% include head.html %}
 
+
+	{% assign lang			= page.language ? page.language : "de" %}
+	{% assign languages		= "" | split: "" %}
+
+	{% for collection in site.collections %}
+		{% if collection.language  %}
+
+
+			{% if collection.language == lang %}
+				{% assign chapters 		= collection.docs %}	
+			{% else %}			
+				{% assign languages		= languages | push: collection.language %}
+			{% endif%}
+			
+		{% endif%}
+
+	{% endfor %}
+
 	<body id = "top" >
 
 		<header>
@@ -16,6 +34,22 @@
 					<i class = "fa fa-download"></i>
 				</a>
 
+				<a
+					ng-if 		= "!narrow"
+					ng-click	= "toggleLang()"
+				>
+					{{page.language}}
+				</a>
+
+				{% for language in languages %}
+				<a 
+					ng-show 		= "showLang"
+					href			= "index_{{language}}.html"
+				>
+					{{language}}
+				</a>
+				{% endfor %}
+
 				<a 
 					ng-if		= "narrow"
 					ng-click	= "toggleTOC()"
@@ -29,13 +63,14 @@
 		<aside class 		= "left">
 			{% include toc.html %}
 			<div class ="content">
-				{{ content }}
+				{{ page.content }}
 			</div>
 		</aside>
 
 	
 
 		<section class="main-content">
+
 		{% capture cache %}
 
 			{% assign A1 = "" | split: "" %}
@@ -43,7 +78,7 @@
 			{% assign A3 = "" | split: "" | push: 0 %}
 			{% assign A4 = "" | split: "" | push: 0 %}
 
-			{% for chapter in site.chapters %}
+			{% for chapter in chapters %}
 					{% assign numbers =  chapter.number | split: "." %}
 					{% assign size = numbers | size %}
 
@@ -92,7 +127,7 @@
 									{% endif %}
 								{% endif %}
 
-							{% assign matching_chapters = site.chapters | where: "number", chapter_number %}
+							{% assign matching_chapters = chapters | where: "number", chapter_number %}
 
 							{% for chapter in matching_chapters | sort: "type" %}
 								{% assign sorted_chapters = sorted_chapters | push: chapter %}						

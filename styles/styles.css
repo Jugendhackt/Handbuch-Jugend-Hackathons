@@ -166,11 +166,19 @@ aside.right {
 	bottom:				0;
 	width:				4rem;
 	text-align:			center;
+
+
+	-webkit-touch-callout: 	none; 
+	-webkit-user-select: 	none;   
+	-khtml-user-select: 	none;   
+	-moz-user-select: 		none;    
+	-ms-user-select: 		none;     
+	user-select: 			none; 
 }
 
 
 
-aside.right * {
+aside.right > * {
 	display:			block;
 	font-size:			1.5rem;
 	margin:				1rem auto;
@@ -182,7 +190,47 @@ aside.right * {
 	background:			#006e83;
 	text-align:			center;
 	cursor:				pointer;
+	animation:			aside-in 300ms ease-in;
 }
+
+@-webkit-keyframes aside-in {
+	0%{
+		transform:		translateX(4em);
+		opacity:		0;
+	}
+
+	75%{
+		transform:		translateX(-1em);
+		opacity:		1;		
+
+	}
+
+	100%{
+		transform:		translateX(0em);
+		opacity:		1;		
+
+	}
+}
+
+@keyframes aside-in {
+	0%{
+		transform:		translateX(4em);
+		opacity:		0;
+	}
+
+	75%{
+		transform:		translateX(-1em);
+		opacity:		1;		
+
+	}
+
+	100%{
+		transform:		translateX(0em);
+		opacity:		1;		
+
+	}
+}
+
 
 .narrow aside.right {
 	position:			absolute;
