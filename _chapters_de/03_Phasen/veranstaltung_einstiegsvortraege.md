@@ -1,0 +1,12 @@
+---
+title: 					"Einstiegsvorträge"
+number: 		"3.9.4"
+---
+
+Nach der Begrüßung folgt eine Inputphase. Sie richtet sich an alle Teilnehmenden, weshalb sich ein zentrales Format anbietet. Hier geht es darum, die inhaltlichen Grundlagen für den Jugend-Hackathons darzustellen. Welches sind die thematischen Schwerpunkte? Warum wurden sie gewählt? Welche Daten liegen vor und warum sind sie interessant? Die letzte Frage sollte nicht allzu ausführlich erläutert werden, um den Teilnehmenden nicht die eigenständige Projektentwicklung abzunehmen. Allerdings werden die Jugendlichen unterschiedliche Kenntnisse mitbringen. Manche werden das Format des Hackathons kennen, andere nicht. Manche reisen mit Projektideen an, andere haben auch nach den Inputs noch keine Idee. 
+
+Auf diese Unterschiede einzugehen, ist die Aufgabe der Inputs, denn dies ist der letzte Block vor dem Brainstorming und somit nicht nur inhaltlich, sondern auch atmosphärisch für den weiteren Verlauf entscheidend. Entsprechend ist es die Aufgabe des Organisationsteams, die Inputs so zu wählen, dass Jugendliche unterschiedlichen Wissenstands einen Begriff von den inhaltlichen Schwerpunkten und Daten bekommen und so auf die unmittelbar folgende Ideenentwicklung vorbereitet werden. Außerdem sollte diese Phase dazu genutzt werden, das Angebot an verfügbarer Hardware aufzuzeigen.
+
+Nichtsdestotrotz sollte die Inputphase maximal 30 – 60 Minuten dauern, um nicht in eine Frontalveranstaltung abzugleiten. Weiterführend können frontale Angebote im Rahmen der Lightning-Talks gemacht werden. Darüber hinaus stehen die Mentor/innen den Teilnehmenden individuell für Rückfragen unabhängig vom Zeitplan der Veranstaltung zur Verfügung.
+
+In vielen Veranstaltungen werden solche Zeitspannen für Grußworte von Unterstützern und Sponsoren genutzt. Die Unterstützung sollte gewürdigt werden, wenn die Unterstützer jedoch einen sehr guten Job machen möchten, schenken sie diese Zeit der Grußworte den Jugendlichen für inhaltliche Inputs. Die Organisator/innen sollten diese wichtige Phase im Sinne der Jugendlichen gegen formalisierte Abläufe und Gewohnheiten verteidigen, der öffentliche Teil der Projektpräsentationen eignet sich ohnehin viel besser für Sponsoren-Worte – an dieser Stelle reicht die Nennung der Unterstützer mit einer Logo-Tafel.

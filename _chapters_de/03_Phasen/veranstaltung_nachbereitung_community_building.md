@@ -1,0 +1,8 @@
+---
+title: 						"Community-Building"
+number: 			"3.9.18.3"
+---
+
+Eine Rückmeldung, die wir immer wieder von Teilnehmenden bei „Jugend hackt“ bekommen, ist, dass es für sie das erste Mal ist, dass sie sich mit Gleichgesinnten über ihre Technikbegeisterung austauschen können. Dieser Austausch muss sich keinesfalls nur auf den Zeitraum des Hackathons beschränken, im Gegenteil. Wenn darüber hinaus Kontakt zwischen den Jugendlichen besteht, Freundschaften geschlossen werden oder gemeinsam das entstandene Projekt weiterentwickelt wird, dann ist das ein großer Erfolg für den Hackathon. Es lohnt sich, den Jugendlichen diese Möglichkeiten zu geben, zum Beispiel durch die Einführung gemeinsamer Kommunikationskanäle wie Slack oder IRC. Je nach Ressourcen und eigenen Zielen kann dies strukturiert, in Form von professionellem Community-Management begleitet oder einfach als offener Raum und freies Angebot bereitgestellt werden.
+
+Mindestens genauso wichtig ist es auch, den Mentor/innen eine Möglichkeit zu weiterem Kontakt zu bieten. Auch ihnen kann man Onlinekanäle zur Verfügung stellen. Viel besser eignen sich jedoch erneute Treffen, bei denen man nochmals gezielt ihr Feedback und ihre Erfahrungen während des Hackathons abfragt und gleichzeitig ihr Engagement und ihre Arbeit würdigt, zum Beispiel durch ein schönes gemeinsames Essen. Wenn der eigene Jugend-Hackathon nicht zur Eintagsfliege werden soll, ist es enorm wichtig, regelmäßigen und wertschätzenden Kontakt zu den Mentor/innen aufzubauen.
