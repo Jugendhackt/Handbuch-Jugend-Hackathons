@@ -1,96 +1,150 @@
 <!DOCTYPE html>
-<html lang="de-de">
+<html lang="de-de" ng-app = "handbook" ng-class	= "{'show-toc': show_toc}">
 	{% include head.html %}
 
-	<body id = "top">
 
-		{% include header.html %}
+	{% assign lang			= page.language ? page.language : "de" %}
+	{% assign languages		= "" | split: "" %}
 
-		<aside class = "left">
-			{{ content }}
+	{% for collection in site.collections %}
+		{% if collection.language  %}
+
+
+			{% if collection.language == lang %}
+				{% assign chapters 		= collection.docs %}	
+			{% else %}			
+				{% assign languages		= languages | push: collection.language %}
+			{% endif%}
+			
+		{% endif%}
+
+	{% endfor %}
+
+	<body id = "top" >
+
+		<header>
+			<div id ="logo">
+				<h1>{{page.title}}</h1>
+			</div>
+			<aside class = "right">
+				<a href = "#top" title = "scroll to top">
+					<i class = "fa fa-arrow-up"></i>
+				</a>
+				<a href = "appendix/00 Hanbuch_Jugend-Hackathons.pdf" title = "Download PDF">
+					<i class = "fa fa-download"></i>
+				</a>
+
+				<a
+					ng-if 		= "!narrow"
+					ng-click	= "toggleLang()"
+				>
+					{{page.language}}
+				</a>
+
+				{% for language in languages %}
+				<a 
+					ng-show 		= "showLang"
+					href			= "index_{{language}}.html"
+				>
+					{{language}}
+				</a>
+				{% endfor %}
+
+				<a 
+					ng-if		= "narrow"
+					ng-click	= "toggleTOC()"
+				>
+					<i class 	= "fa fa-bars"></i>
+				</a>
+			</aside>
+		</header>
+		
+
+		<aside class 		= "left">
+			{% include toc.html %}
+			<div class ="content">
+				{{ page.content | markdownify }}
+			</div>
 		</aside>
 
-		<aside class = "right">
-			<a href = "#top">
-				<i class = "fa fa-arrow-up"></i>
-			</a>
-			<a>
-				<i class = "fa fa-download"></i>
-			</a>
-		</aside>
+	
 
 		<section class="main-content">
 
-		{% assign A1 = "" | split: "" %}
-		{% assign A2 = "" | split: "" | push: 0 %}
-		{% assign A3 = "" | split: "" | push: 0 %}
-		{% assign A4 = "" | split: "" | push: 0 %}
+		{% capture cache %}
 
-		{% for chapter in site.chapters %}
-				{% assign numbers =  chapter.number | split: "." %}
-				{% assign size = numbers | size %}
+			{% assign A1 = "" | split: "" %}
+			{% assign A2 = "" | split: "" | push: 0 %}
+			{% assign A3 = "" | split: "" | push: 0 %}
+			{% assign A4 = "" | split: "" | push: 0 %}
 
-				{% if size > 0 %} 
-					{% assign n = numbers[0] | times: 1 %}
-					{% assign A1 = A1 | push: n %} 
-				{% endif %}
+			{% for chapter in chapters %}
+					{% assign numbers =  chapter.number | split: "." %}
+					{% assign size = numbers | size %}
 
-				{% if size > 1 %} 
-					{% assign n = numbers[1] | times: 1 %}
-					{% assign A2 = A2 | push: n %} 
-				{% endif %}
+					{% if size > 0 %} 
+						{% assign n = numbers[0] | times: 1 %}
+						{% assign A1 = A1 | push: n %} 
+					{% endif %}
 
-				{% if size > 2 %} 
-					{% assign n = numbers[2] | times: 1 %}
-					{% assign A3 = A3 | push: n %} 
-				{% endif %}
+					{% if size > 1 %} 
+						{% assign n = numbers[1] | times: 1 %}
+						{% assign A2 = A2 | push: n %} 
+					{% endif %}
 
-				{% if size > 3 %} 
-					{% assign n = numbers[3] | times: 1 %}
-					{% assign A4 = A4 | push: n %} 
-				{% endif %}
+					{% if size > 2 %} 
+						{% assign n = numbers[2] | times: 1 %}
+						{% assign A3 = A3 | push: n %} 
+					{% endif %}
 
-		{% endfor %}
+					{% if size > 3 %} 
+						{% assign n = numbers[3] | times: 1 %}
+						{% assign A4 = A4 | push: n %} 
+					{% endif %}
 
-		{% assign A1 = A1 | uniq | sort %}
-		{% assign A2 = A2 | uniq | sort %}
-		{% assign A3 = A3 | uniq | sort %}
-		{% assign A4 = A4 | uniq | sort %}
+			{% endfor %}
+
+			{% assign A1 = A1 | uniq | sort %}
+			{% assign A2 = A2 | uniq | sort %}
+			{% assign A3 = A3 | uniq | sort %}
+			{% assign A4 = A4 | uniq | sort %}
 
 
-		{% assign sorted_chapters = "" | split: "" %}
+			{% assign sorted_chapters = "" | split: "" %}
 
-		{% for x in A1 %}
-			{% for y in A2 %}
-				{% for z in A3 %}
-					{% for v in A4 %}
-						{% assign chapter_number = "" | append: x %}
-							{% if y != 0 %}
-								{% assign chapter_number = chapter_number | append: "."| append: y %}
-								{% if z != 0 %}
-									{% assign chapter_number = chapter_number | append: "." | append: z %}
-									{% if v != 0 %}
-										{% assign chapter_number = chapter_number | append: "." | append: v %}
+			{% for x in A1 %}
+				{% for y in A2 %}
+					{% for z in A3 %}
+						{% for v in A4 %}
+							{% assign chapter_number = "" | append: x %}
+								{% if y != 0 %}
+									{% assign chapter_number = chapter_number | append: "."| append: y %}
+									{% if z != 0 %}
+										{% assign chapter_number = chapter_number | append: "." | append: z %}
+										{% if v != 0 %}
+											{% assign chapter_number = chapter_number | append: "." | append: v %}
+										{% endif %}
 									{% endif %}
 								{% endif %}
-							{% endif %}
 
-						{% assign matching_chapters = site.chapters | where: "number", chapter_number %}
+							{% assign matching_chapters = chapters | where: "number", chapter_number %}
 
-						{% for chapter in matching_chapters | sort: "type" %}
-							{% assign sorted_chapters = sorted_chapters | push: chapter %}						
+							{% for chapter in matching_chapters | sort: "type" %}
+								{% assign sorted_chapters = sorted_chapters | push: chapter %}						
+							{% endfor %}
+							
+							{% if z == 0 %} {% break %} {% endif %}
 						{% endfor %}
-						
-						{% if z == 0 %} {% break %} {% endif %}
+						{% if y == 0 %} {% break %} {% endif %}
 					{% endfor %}
-					{% if y == 0 %} {% break %} {% endif %}
 				{% endfor %}
-			{% endfor %}
-		{% endfor %} 
+			{% endfor %} 
 
 
-		{% assign current_chapter = '1' %}
-		{% assign chapters = sorted_chapters %}
+			{% assign current_chapter = '1' %}
+			{% assign chapters = sorted_chapters %}
+		{% endcapture %}{% assign cache = nil %}
+
 
 			<section class ="chapter chapter-1">
 
