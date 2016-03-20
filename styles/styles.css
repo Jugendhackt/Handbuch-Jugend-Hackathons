@@ -142,7 +142,8 @@ aside.left {
 aside.left .content {
 	position:			absolute;
 	bottom:				0;
-	padding:			1rem;
+	padding-top:		1rem;
+	padding-left:		1rem;
 }
 
 
@@ -178,7 +179,8 @@ aside.right {
 
 
 
-aside.right > * {
+aside.right a,
+aside.right > div a:first-child {
 	display:			block;
 	font-size:			1.5rem;
 	margin:				1rem auto;
@@ -189,9 +191,21 @@ aside.right > * {
 	color:				#fff;
 	background:			#006e83;
 	text-align:			center;
-	cursor:				pointer;
+	cursor:				default;
 	animation:			aside-in 300ms ease-in;
 }
+
+aside.right a[href],
+aside.right a[ng-click]{
+	cursor:				pointer;
+}
+
+aside.right > div a {
+	color:				#006e83;
+	background:			#fff;
+	box-shadow:			inset 0 0 0 0.15em #006e83;
+}
+
 
 @-webkit-keyframes aside-in {
 	0%{
@@ -251,6 +265,9 @@ aside.right > * {
 	width:				1.5em;
 }
 
+.narrow aside.right *:nth-child(n+4) {
+	display:			none;
+}
 
 #logo {
 	position:			absolute;
@@ -332,9 +349,43 @@ aside.right > * {
 	overflow-x:			hidden;
 }
 
+
 .narrow #toc {
 	display:			none;
 }
+
+.narrow #toc ul {
+	margin-bottom:		2rem;
+}
+
+#toc .languages {
+	display:			none;
+}
+
+.narrow #toc .languages {
+	display:			block;
+	text-align:			right;
+}
+
+.narrow #toc .languages a{
+	display:			inline-block;
+	min-width:			2em;
+	padding:			0 0.5em;
+	margin-right:		0.5em;
+	line-height:		1.6em;
+	background:			#f97134;
+	color:				#fff;
+	text-align:			center;
+	font-weight:		bold;
+}
+
+.narrow #toc .languages a[href]{
+	background:			#fff;
+	color:				#f97134;
+	box-shadow:			0 0 0 0.2em #f97134 inset;
+	font-weight:		normal;
+}
+
 
 .show-toc .narrow #toc {
 	display:			block;

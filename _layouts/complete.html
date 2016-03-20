@@ -20,47 +20,48 @@
 
 	{% endfor %}
 
-	<body id = "top" >
+	<body id = "top">
 
 		<header>
 			<div id ="logo">
 				<h1>{{page.title}}</h1>
 			</div>
 			<aside class = "right">
+
 				<a href = "#top" title = "scroll to top">
 					<i class = "fa fa-arrow-up"></i>
 				</a>
 				<a href = "appendix/00 Hanbuch_Jugend-Hackathons.pdf" title = "Download PDF">
 					<i class = "fa fa-download"></i>
 				</a>
-
-				<a
-					ng-if 		= "!narrow"
-					ng-click	= "toggleLang()"
-				>
-					{{page.language}}
-				</a>
-
-				{% for language in languages %}
-				<a 
-					ng-show 		= "showLang"
-					href			= "index_{{language}}.html"
-				>
-					{{language}}
-				</a>
-				{% endfor %}
-
 				<a 
 					ng-if		= "narrow"
 					ng-click	= "toggleTOC()"
 				>
 					<i class 	= "fa fa-bars"></i>
 				</a>
+
+				{% if languages.size != 0 %}
+					<div class		= "languages">
+						<a>					
+							{{page.language}}
+						</a>
+
+						{% for language in languages %}
+						<a 
+							href			= "index_{{language}}.html"
+						>
+							{{language}}
+						</a>
+						{% endfor %}
+					</div>
+				{% endif %}
 			</aside>
 		</header>
 		
 
-		<aside class 		= "left">
+		<aside class = "left">
+
 			{% include toc.html %}
 			<div class ="content">
 				{{ page.content | markdownify }}
