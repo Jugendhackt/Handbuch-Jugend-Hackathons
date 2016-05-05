@@ -467,19 +467,27 @@ aside.right > div a {
 
 /**orange**/
 
-#toc .chapter-2.depth-1{
+#toc .chapter-2.depth-1,
+#toc .chapter-4.depth-1,
+#toc .chapter-6.depth-1 {
 	background:			#f97134 !important;
 }
 
-#toc .chapter-2.depth-1 a{
+#toc .chapter-2.depth-1 a,
+#toc .chapter-4.depth-1 a,
+#toc .chapter-6.depth-1 a {
 	box-shadow:			0 -0.5rem 0 #f97134;
 }
 
-#toc .chapter-2:nth-of-type(2n+2) {
+#toc .chapter-2:nth-of-type(2n+2),
+#toc .chapter-4:nth-of-type(2n+2),
+#toc .chapter-6:nth-of-type(2n+2) {
 	background:			#f4e9df;
 }
 
-#toc .chapter-2:nth-of-type(2n+3) {
+#toc .chapter-2:nth-of-type(2n+3),
+#toc .chapter-4:nth-of-type(2n+3),
+#toc .chapter-6:nth-of-type(2n+3) {
 	background:			#f6c6a9;
 }
 
@@ -487,22 +495,26 @@ aside.right > div a {
 
 
 #toc .chapter-1.depth-1,
-#toc .chapter-3.depth-1 {
+#toc .chapter-3.depth-1,
+#toc .chapter-5.depth-1 {
 	background:			#00b9cb !important;
 }
 
 #toc .chapter-1.depth-1 a,
-#toc .chapter-3.depth-1 a{
+#toc .chapter-3.depth-1 a,
+#toc .chapter-5.depth-1 a{
 	box-shadow:			0 -0.5rem 0 #00b9cb;
 }
 
 #toc .chapter-1:nth-of-type(2n+2),
-#toc .chapter-3:nth-of-type(2n+2){
+#toc .chapter-3:nth-of-type(2n+2),
+#toc .chapter-5:nth-of-type(2n+2){
 	background:			#c7eaf1;
 }
 
 #toc .chapter-1:nth-of-type(2n+3),
-#toc .chapter-3:nth-of-type(2n+3){
+#toc .chapter-3:nth-of-type(2n+3),
+#toc .chapter-5:nth-of-type(2n+3){
 	background:			#91e3f2;
 }
 
