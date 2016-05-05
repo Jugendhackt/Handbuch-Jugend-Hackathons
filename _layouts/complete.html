@@ -38,7 +38,7 @@
 					ng-if		= "narrow"
 					ng-click	= "toggleTOC()"
 				>
-					<i class 	= "fa fa-bars"></i>
+					<i class 	= "fa" ng-class ="{'fa-bars': !show_toc, 'fa-times' : show_toc }"></i>
 				</a>
 
 				{% if languages.size != 0 %}
