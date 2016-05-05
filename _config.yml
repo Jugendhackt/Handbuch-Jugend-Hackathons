@@ -1,8 +1,3 @@
- github: [metadata]
- kramdown:
-   input: GFM
-   hard_wrap: false
-
 baseurl: "/Handbuch-Jugend-Hackathons"
 
 collections:
