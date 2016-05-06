@@ -447,7 +447,7 @@ aside.right > div a {
 #toc li.depth-3 .chapter-number .digit,
 #toc li.depth-4 .chapter-number .digit,
 #toc li.depth-5 .chapter-number .digit {
-	opacity:			0.3;
+	opacity:			1;//0.3;
 }
 
 #toc li.depth-3 .chapter-number .digit + .digit + .digit,
