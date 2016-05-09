@@ -23,20 +23,39 @@
 	<body id = "top">
 
 		<header>
-			<div id ="logo">
-				<h1>{{page.title}}</h1>
+			<div hero-spacer></div>
+			<div id = "logo">
+				<h1>{{page.title | replace_first: ' ', '<br/>'}}</h1>
 			</div>
+
+			<div class ="logos">
+				<div style = "background-image: url('/images/logo_okf.png')"></div><!--
+			 --><div style = "background-image: url('/images/logo_mediale_pfade.png')"></div>
+			</div>
+
+			<div class = "content">
+					{{ page.content | markdownify }}
+			</div>
+
+			<aside class = "left">
+				{% include toc.html %}
+			</aside>
+
+
 			<aside class = "right">
 
-				<a href = "#top" title = "Scroll to top">
+				<a href = "#top" title = "Scroll to top" id = "goto-top">
 					<i class = "fa fa-arrow-up"></i>
 				</a>
-				<a href = "{{ site.github.repository_url }}" title ="Project on github">
-					<i class = "fa fa-github"></i>
-				</a>
-				<a href = "appendix/00 Handbuch_Jugend-Hackathons.pdf" title = "Download PDF">
+
+				<a href = "appendix/00 Handbuch_Jugend-Hackathons.pdf" title = "Download PDF" target="_blank">
 					<i class = "fa fa-download"></i>
 				</a>
+
+				<a href = "{{ site.github.repository_url }}" title ="Project on github" target="_blank">
+					<i class = "fa fa-github"></i>
+				</a>
+
 				<a 
 					ng-if		= "narrow"
 					ng-click	= "toggleTOC()"
@@ -59,17 +78,11 @@
 						{% endfor %}
 					</div>
 				{% endif %}
+
+				<!-- items below this line will be moved to the menu on mobile devices -->
+
 			</aside>
 		</header>
-		
-
-		<aside class = "left">
-
-			{% include toc.html %}
-			<div class ="content">
-				{{ page.content | markdownify }}
-			</div>
-		</aside>
 
 	
 

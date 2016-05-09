@@ -1,7 +1,7 @@
 hbjh 	= 	angular.module(
 				'handbook',
 				[
-					'ngTouch',
+					//'ngTouch',
 				]
 			)
 
@@ -75,9 +75,11 @@ hbjh.run([
 			if(threshold_px > width){
 				$rootScope.narrow = true
 				body.addClass('narrow')
+				body.removeClass('wide')
 				html.css('font-size', (width/narrow_rem) + 'px')
 			} else {
 				$rootScope.narrow = false
+				body.addClass('wide')
 				body.removeClass('narrow')
 				html.css('font-size', 'inherit')
 			}
@@ -87,11 +89,41 @@ hbjh.run([
 		adjustContentWidth()
 		angular.element($window).on('resize', adjustContentWidth)
 
-		$timeout(function(){
-			adjustContentWidth()
-		}, 500)
+		$timeout(adjustContentWidth, 500)
 	}
 ])		
+
+
+.directive('heroSpacer',[
+
+	'$document',
+	'$timeout',
+
+	function($document, $timeout){
+		return {
+			restrict: 	'AE',
+			scope: 		false,
+
+			link: function(scope, element, attrs){
+				var body = $document.find('body')
+
+				function checkHero(){
+						var hero_out = element[0].getBoundingClientRect().bottom <= 0
+
+						body.toggleClass('hero-in', !hero_out)
+						body.toggleClass('hero-out', hero_out)
+				}
+
+				$timeout(checkHero, 500)
+
+				$document.on('scroll', function(){
+					window.requestAnimationFrame(checkHero)
+				})
+				
+			}
+		}
+	}
+])
 
 
 
