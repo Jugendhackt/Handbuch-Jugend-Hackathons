@@ -99,7 +99,7 @@ header {
 
 .wide header {
 	height:				38rem;
-	background-image:	url('/images/cover_leitfaden.png'), url('/images/cover_raw.jpg'), url('/images/lines.png');
+	background-image:	url('../images/cover_leitfaden.png'), url('../images/cover_raw.jpg'), url('../images/lines.png');
 	background-repeat:	no-repeat,no-repeat, repeat-x;
 	background-size:	20rem auto, 40rem auto, 40rem auto;
 	background-position:100% 0, 8.9rem 0, 1.9rem 0; 
@@ -110,7 +110,7 @@ header {
 .narrow header{
 	width:				100%;
 	padding-top:		100%;
-	background-image:	url('/images/cover_raw_low.jpg');
+	background-image:	url('../images/cover_raw_low.jpg');
 	background-repeat:	no-repeat;
 	background-size:	100% auto;
 	background-position:50% 0
@@ -337,7 +337,7 @@ aside.right > div a {
 	text-align:			right;
 	background:			#fff;
 	z-index: 			100;
-
+	padding-right:		0.5rem;
 }
 
 .narrow aside.right * {
@@ -346,8 +346,13 @@ aside.right > div a {
 	border-radius:		0;
 	color:				#f97134;
 	margin:				0 0rem;
-	width:				1.3em;
-	line-height:		1.65em;
+	width:				1.5em;
+	font-size:			1.3em;
+	line-height:		1.5em;
+}
+
+.narrow aside.right *:hover {
+	transform:			none !important;
 }
 
 .narrow aside.right *:nth-child(n+5) {
