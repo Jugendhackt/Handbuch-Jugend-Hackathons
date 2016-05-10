@@ -194,7 +194,7 @@ header {
 
 
 
-.wide aside.left {
+.wide header aside.left {
 	margin-top:			5.9rem;
 	position:			relative;
 	left:				0;
@@ -208,7 +208,7 @@ header {
 }
 
 
-.wide .hero-out header aside.left {
+.wide.hero-out header aside.left {
 	top:				5rem;
 	bottom:				0;
 	margin-top:			0rem;
