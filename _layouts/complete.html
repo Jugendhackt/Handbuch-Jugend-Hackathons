@@ -58,7 +58,7 @@
 				</a>
 
 				<pre>
-						{{site | jsonify}}
+						{{site.github | jsonify}}
 				</pre>
 
 				<a 
@@ -149,9 +149,9 @@
 									{% endif %}
 								{% endif %}
 
-							{% assign matching_chapters = chapters | where: "number", chapter_number %}
+							{% assign matching_chapters = chapters | where: "number", chapter_number | sort: "type" %}
 
-							{% for chapter in matching_chapters | sort: "type" %}
+							{% for chapter in matching_chapters %}
 								{% assign sorted_chapters = sorted_chapters | push: chapter %}						
 							{% endfor %}
 							
