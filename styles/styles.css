@@ -201,7 +201,7 @@ header {
 	width:				24rem;
 	padding:			0;
 	height:				auto;
-	text-align:			justify;
+	text-align:			left;
 	font-size:			0.8rem;
 	background:			#fff;
 	transition:			all 300ms;
@@ -504,9 +504,13 @@ aside.right > div a {
 #toc {
 	padding:			0;
 	padding-left:		1rem;
-	overflow-y:			scroll;
+	overflow-y:			hidden;
 	overflow-x:			hidden;
 	height:				100%;
+}
+
+#toc:hover {
+	overflow-y:			scroll;
 }
 
 .hero-in #toc {
