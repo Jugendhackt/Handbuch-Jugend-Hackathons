@@ -3,9 +3,19 @@
 
 </footer>
 
+{% if site.github_hosted %}
 <script src="{{ '/js/lib/jquery-3.3.1.min.js?v=' | append: site.github.build_revision | relative_url }}"></script>
 <script src="{{ '/js/lib/angular.min.js?v=' | append: site.github.build_revision | relative_url }}"></script>
 <script src="{{ '/js/lib/angular-touch.min.js?v=' | append: site.github.build_revision | relative_url }}"></script>
 
 <script src="{{ '/js/app.js?v=' | append: site.github.build_revision | relative_url }}"></script>
 <script src="{{ '/js/preloader.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+{% else %}
+<script src="{{ '/js/lib/jquery-3.3.1.min.js' | relative_url }}"></script>
+<script src="{{ '/js/lib/angular.min.js' | relative_url }}"></script>
+<script src="{{ '/js/lib/angular-touch.min.js' | relative_url }}"></script>
+
+<script src="{{ '/js/app.js' | relative_url }}"></script>
+<script src="{{ '/js/preloader.js' | relative_url }}"></script>
+{% endif %}
+
