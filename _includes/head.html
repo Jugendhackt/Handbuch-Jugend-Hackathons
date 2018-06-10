@@ -3,12 +3,12 @@
 	<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">    
 
-	<link type="text/css" rel="stylesheet" href="styles/styles.css">
-	<link type="text/css" rel="stylesheet" href="styles/font-awesome.min.css">
+	<link type="text/css" rel="stylesheet" href="{{ '/styles/styles.css?v=' | append: site.github.build_revision | relative_url }}">
+	<link type="text/css" rel="stylesheet" href="{{ '/styles/font-awesome.min.css?v=' | append: site.github.build_revision | relative_url }}">
 
-	<script src="js/lib/angular.min.js"></script>
-	<script src="js/lib/angular-touch.min.js"></script>
+	<script src="{{ '/js/lib/angular.min.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+	<script src="{{ '/js/lib/angular-touch.min.js?v=' | append: site.github.build_revision | relative_url }}"></script>
 
-	<script src="js/app.js"></script>
+	<script src="{{ '/js/app.js?v=' | append: site.github.build_revision | relative_url }}"></script>
 
 </head>
