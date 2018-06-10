@@ -1,7 +1,9 @@
 
 $(document).ready(function() {
 	
-	console.log("Disabling preloader...")
-	$('body').addClass('loaded');
+	setTimeout(function() {
+		console.log("Disabling preloader...")
+		$('body').addClass('loaded');
+	}, 3000);
 	
 });
