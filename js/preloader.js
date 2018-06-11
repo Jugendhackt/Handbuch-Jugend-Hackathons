@@ -1,6 +1,4 @@
 
-$(document).ready(function() {
-	
-	$('body').addClass('loaded');
-	
+window.addEventListener("load", function() {
+    document.body.classList.add("loaded");
 });
