@@ -1,7 +1,5 @@
 baseurl: "/Handbuch-Jugend-Hackathons"
 
-github_hosted: false
-
 collections:
     chapters_de:
         output: true
