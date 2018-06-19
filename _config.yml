@@ -1,16 +1,11 @@
 baseurl: "/Handbuch-Jugend-Hackathons"
 
-github_hosted: false
-
 collections:
     chapters_de:
         output: true
         permalink: /chapters_de/:path/
         language: de
-    chapters_nl:
-        output: true
-        permalink: /chapters_nl/:path/
-        language: nl
+
 
 defaults:
   - scope:

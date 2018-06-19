@@ -20,52 +20,70 @@
 
 	{% endfor %}
 
-	<body id = "top" >
+	<body id = "top">
 
 		<header>
-			<div id ="logo">
-				<h1>{{page.title}}</h1>
+			<div hero-spacer></div>
+			<div id = "logo">
+				<h1>{{page.title | replace_first: ' ', '<br/>'}}</h1>
 			</div>
+
+			<div class ="logos">
+				<div style = "background-image: url('images/logo_okf.png')"></div><!--
+			 --><div style = "background-image: url('images/logo_mediale_pfade.png')"></div>
+			</div>
+
+			<div class = "content">
+					{{ page.content | markdownify }}
+			</div>
+
+			<aside class = "left">
+				{% include toc.html %}
+			</aside>
+
+
 			<aside class = "right">
-				<a href = "#top" title = "scroll to top">
+
+				<a href = "#top" title = "Scroll to top" id = "goto-top">
 					<i class = "fa fa-arrow-up"></i>
 				</a>
-				<a href = "appendix/00 Hanbuch_Jugend-Hackathons.pdf" title = "Download PDF">
+
+				<a href = "appendix/00 Handbuch_Jugend-Hackathons.pdf" title = "Download PDF" target="_blank">
 					<i class = "fa fa-download"></i>
 				</a>
 
-				<a
-					ng-if 		= "!narrow"
-					ng-click	= "toggleLang()"
-				>
-					{{page.language}}
-				</a>
 
-				{% for language in languages %}
-				<a 
-					ng-show 		= "showLang"
-					href			= "index_{{language}}.html"
-				>
-					{{language}}
+				<a href = "https://github.com/Jugendhackt/Handbuch-Jugend-Hackathons" title ="Project on github" target="_blank">
+					<i class = "fa fa-github"></i>
 				</a>
-				{% endfor %}
 
 				<a 
 					ng-if		= "narrow"
 					ng-click	= "toggleTOC()"
 				>
-					<i class 	= "fa fa-bars"></i>
+					<i class 	= "fa" ng-class ="{'fa-bars': !show_toc, 'fa-times' : show_toc}"></i>
 				</a>
+
+				{% if languages.size != 0 %}
+					<div class		= "languages">
+						<a>					
+							{{page.language}}
+						</a>
+
+						{% for language in languages %}
+						<a 
+							href			= "index_{{language}}.html"
+						>
+							{{language}}
+						</a>
+						{% endfor %}
+					</div>
+				{% endif %}
+
+				<!-- items below this line will be moved to the menu on mobile devices -->
+
 			</aside>
 		</header>
-		
-
-		<aside class 		= "left">
-			{% include toc.html %}
-			<div class ="content">
-				{{ page.content | markdownify }}
-			</div>
-		</aside>
 
 	
 
@@ -127,9 +145,9 @@
 									{% endif %}
 								{% endif %}
 
-							{% assign matching_chapters = chapters | where: "number", chapter_number %}
+							{% assign matching_chapters = chapters | where: "number", chapter_number | sort: "type" %}
 
-							{% for chapter in matching_chapters | sort: "type" %}
+							{% for chapter in matching_chapters %}
 								{% assign sorted_chapters = sorted_chapters | push: chapter %}						
 							{% endfor %}
 							

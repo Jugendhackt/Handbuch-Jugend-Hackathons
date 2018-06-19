@@ -34,10 +34,12 @@ html {
 	opacity:			1;
 }
 
+body:not(.narrow){}
+
 
 body.narrow {
-	padding-top:		5rem;
-	height:				100%;
+	padding-top:		2.5rem;
+	min- height:		100%;
 }
 
 
@@ -66,43 +68,6 @@ a {
 	animation:			none;
 }
 
-.narrow a:hover:before {
-	position:			absolute;
-	content:			'';
-	z-index:			-1;
-	top:				50%;
-	left:				50%;
-	height:				1px;
-	width:				1px;
-	border-radius:		100rem;
-	opacity:			0;
-	animation:			pulse 600ms;
-}
-
-	@keyframes pulse{
-
-		0% 	{	
-			box-shadow:	0 0 0 0em #000;
-			opacity:	0.6;
-		}
-		100% {
-			box-shadow:	0 0 0 1em #000;
-			opacity:	0;
-		}
-	}
-
-	@webkit-keyframes pulse{
-
-		0% 	{	
-			box-shadow:	0 0 0 0em #000;
-			opacity:	0.6;
-		}
-		100% {
-			box-shadow:	0 0 0 1em #000;
-			opacity:	0;
-		}
-	}
-
 
 strong {
 	font-family:		fira-sans-semi-bold;
@@ -110,56 +75,169 @@ strong {
 }
 
 
+.wide [hero-spacer]{
+	width:				1px;
+	height:				27.1rem;
+}
+
+.narrow [hero-spacer]{
+	display:			none;
+}
+
 header {
-	position:			fixed;
+	position:			relative;
+	display:			block;
 	top:				0;
 	left:				0;
-	width:				24rem;
-	bottom:				15rem;
 	padding:			0rem;
 	z-index:			99999;
-	height:				5rem;
 }
 
-.narrow header {
-	bottom:				auto;
-	height:				4rem;
-	width:				20rem;
+
+
+
+
+.wide header {
+	height:				38rem;
+	background-image:	url('../images/cover_leitfaden.png'), url('../images/cover_raw.jpg'), url('../images/lines.png');
+	background-repeat:	no-repeat,no-repeat, repeat-x;
+	background-size:	20rem auto, 40rem auto, 40rem auto;
+	background-position:100% 0, 8.9rem 0, 1.9rem 0; 
 }
 
-aside.left {
-	top:				5rem;
-	position:			fixed;
-	left:				0;
-	bottom:				0;
-	width:				24rem;
-	padding:			0;
-	height:				auto;
-	text-align:			justify;
-	font-size:			0.8rem;
+
+
+.narrow header{
+	width:				100%;
+	padding-top:		100%;
+	background-image:	url('../images/cover_raw_low.jpg');
+	background-repeat:	no-repeat;
+	background-size:	100% auto;
+	background-position:50% 0
 }
 
-aside.left .content {
+
+
+
+
+
+.wide header .content {
 	position:			absolute;
-	bottom:				0;
-	padding:			1rem;
+	display:			block;
+	font-size:			0.84rem;
+	line-height:		1.5;
+	bottom:				6.2rem;
+	left:				30%;
+	margin-left:		29rem;
+	width:				24%;
+	max-width:			24rem;
+	text-align:			justify;
+}
+
+.wide header .content p{
+	margin:				1.5em 0;
 }
 
 
-.narrow aside.left {
+.narrow header .content {
 	position:			static;
-	width:				auto;
+	font-size:			0.84em;
 	padding:			0 1rem;
 }
 
-.narrow aside.left .content {
+
+
+.wide header .logos {
+	position:			absolute;
+	left:				30%;
+	margin-left:		29rem;
+	bottom:				1.2rem;
+	height:				5rem;
+}
+
+.narrow header .logos {
+	display:			block;
 	position:			static;
-	padding:			0;
+	text-align:			center;
+}
+
+.wide header .logos > *{
+	display:			inline-block;
+
+	height:				5rem;
+	width:				8rem;
+
+
+	background-size:	contain;
+	background-position:50% 50%;
+	background-repeat:	no-repeat;
+	vertical-align:		middle;
+}
+
+.wide header .logos * + * {
+	margin-left:		1.5rem;
+}
+
+.narrow header .logos > * {
+	display:			inline-block;
+
+	height:				3rem;
+	width:				40%;
+
+	margin:				0 5%;
+
+	background-size:	contain;
+	background-position:50% 50%;
+	background-repeat:	no-repeat;
+	vertical-align:		middle;
 }
 
 
 
-aside.right {
+.wide header aside.left {
+	margin-top:			5.9rem;
+	position:			relative;
+	left:				0;
+	width:				24rem;
+	padding:			0;
+	height:				auto;
+	text-align:			left;
+	font-size:			0.8rem;
+	background:			#fff;
+	transition:			all 300ms;
+}
+
+
+.wide.hero-out header aside.left {
+	top:				5rem;
+	bottom:				0;
+	margin-top:			0rem;
+	height:				auto;
+	position:			fixed;
+}
+
+.narrow aside.left {
+	display:			none;
+	position:			fixed;
+	width:				auto;
+	padding:			0 1rem;
+	top:				0;
+	left:				0;
+	right:				0;
+	bottom:				0;
+	z-index:			99;
+	padding:			0;
+	overflow-x:			hidden;
+	overflow-y:			scroll;
+	will-change:		scroll-position;
+}
+
+.show-toc .narrow aside.left{
+	display:			block;
+}
+
+
+.wide aside.right {
 	position:			fixed;
 	top:				0;
 	right:				0;
@@ -178,8 +256,10 @@ aside.right {
 
 
 
-aside.right > * {
+aside.right a,
+aside.right > div a:first-child {
 	display:			block;
+	position:			relative;
 	font-size:			1.5rem;
 	margin:				1rem auto;
 	width:				2em;
@@ -189,57 +269,75 @@ aside.right > * {
 	color:				#fff;
 	background:			#006e83;
 	text-align:			center;
-	cursor:				pointer;
+	cursor:				default;
+	transition:			opacity 300ms ease-in, transform 140ms ease-out;
 	animation:			aside-in 300ms ease-in;
+	z-index:			10;
 }
+
+
+aside.right a[href],
+aside.right a[ng-click]{
+	cursor:				pointer;
+	pointer-events: 	auto;
+}
+
+aside.right a[href]:hover,
+aside.right a[ng-click]:hover{
+	cursor:				pointer;
+	pointer-events: 	auto;
+	transform:			scale(1.2);
+}
+
+aside.right > div a {
+	color:				#006e83;
+	background:			#fff;
+	box-shadow:			inset 0 0 0 0.15em #006e83;
+}
+
 
 @-webkit-keyframes aside-in {
 	0%{
 		transform:		translateX(4em);
-		opacity:		0;
 	}
 
 	75%{
 		transform:		translateX(-1em);
-		opacity:		1;		
 
 	}
 
-	100%{
+	100%{ver
 		transform:		translateX(0em);
-		opacity:		1;		
-
 	}
 }
 
 @keyframes aside-in {
 	0%{
 		transform:		translateX(4em);
-		opacity:		0;
 	}
 
 	75%{
 		transform:		translateX(-1em);
-		opacity:		1;		
 
 	}
 
 	100%{
 		transform:		translateX(0em);
-		opacity:		1;		
 
 	}
 }
 
 
 .narrow aside.right {
-	position:			absolute;
+	position:			fixed;
 	top:				0;
 	right:				0;
-	width:				10rem;
+	width:				9rem;
 	height:				2.5rem;
 	text-align:			right;
 	background:			#fff;
+	z-index: 			100;
+	padding-right:		0.5rem;
 }
 
 .narrow aside.right * {
@@ -249,107 +347,225 @@ aside.right > * {
 	color:				#f97134;
 	margin:				0 0rem;
 	width:				1.5em;
+	font-size:			1.3em;
+	line-height:		1.5em;
+}
+
+.narrow aside.right *:hover {
+	transform:			none !important;
+}
+
+.narrow aside.right *:nth-child(n+5) {
+	display:			none;
+}
+
+
+#goto-top{
+	opacity:			0;
+	pointer-events: 	none;
+}
+.hero-out #goto-top {
+	pointer-events: 	auto;
+	opacity:			1;
 }
 
 
 #logo {
-	position:			absolute;
-	background:			#f97134;
-	width:				24em;
-	height:				5em;
+	position:			relative;
+	max-width:			33em;
+	height:				10em;
 	z-index:			999;
-	font-size:			1em;
+	font-size:			1rem;
+	overflow:			hidden;
+	pointer-events:		none;
+	margin-bottom:		-5em;
+	padding-right:		1em;
+	transition:			width 300ms linear;
+}
+
+.wide #logo {
+	width:				31em;
+}
+
+#logo:before{
+	content:			'';
+	position:			static;
+	background:			#f97134;
+	display:			block;
+	height:				5em;
+	margin-bottom:		-5em;
 }
 
 .narrow #logo {
-	position:			relative;
+	position:			fixed;
+	top:				0;
+	left:				0;
 	display:			inline-block;
 	font-size:			0.5em;
+	width:				11rem;
+	z-index:			101;
 }
 
 #logo:after {
 	content:			'';
 	position:			absolute;
-	left:				100%;
+	right:				0;
 	top:				0;
 	height:				0;
 	width:				0;
 	font-size:			0.25em;
-	border-top:			3em solid #f97134;
-	border-left:		2em solid #f97134;
-	border-bottom:		3em solid transparent;
-	border-right:		2em solid transparent;
+	border-top:			3.3em solid #f97134;
+	border-left:		2.2em solid #f97134;
+	border-bottom:		3.3em solid transparent;
+	border-right:		2.2em solid transparent;
 }
 
 #logo h1 {
-	position:			absolute;
-	bottom:				0;
-	right:				0;
-	font-size:			1.8em;
-	transform:			rotate(-5deg);
+	position:			relative;
+	width:				100%;
+	margin:				0em;
+	margin-left:		-4.5em;
+	font-size:			1.6em;
+	line-height:		1.2em;
+	transform:			rotate(-8deg);
 	transform-origin:	100% 100%;
 	color:				#fff;
 	background:			#f97134;
-	margin:				0em;
-	width:				10em;
-	padding-right:		4em;
-	padding-top:		1em;
+	padding-right:		4.5em;
+	padding-top:		0.18em;
 	padding-bottom:		0.5em;
 	text-align:			right;
 	font-family:		cabin-sketch-regular;
 }
 
 
-#logo h1:before {
-	content:			'';
-	display:			inline-block;
-	height:				1em;
-	width:				4em;
-}
 
 #logo h1:after {
 	content:			'';
 	display:			block;
 	position:			absolute;
-	height:				3.6em;
+	height:				4em;
 	width:				3.6em;
-	bottom:				-0.95em;
+	bottom:				-1em;
 	right:				0.5em;
 	background-image:	url('../images/Tocbot4-06.png');
 	background-repeat:	no-repeat;
 	background-position:100% 100%;
-	background-size:	3.6em auto;
+	background-size:	4em auto;
+}
+
+
+.wide.hero-in #logo{
+	animation-direction:reverse;
+}
+
+.wide.hero-out #logo {
+	top:				0;
+	position:			fixed;
+	width:				24rem;
+	animation-direction:normal;
+}
+
+
+@-webkit-keyframes logo-fix {
+	0%{
+		width:			32rem;
+	}
+
+	25%{idth:			34rem;
+		w
+	}
+
+	75%{
+		width:			22rem;
+	}
+
+	100%{
+		width:			24rem;
+	}
+}
+
+@keyframes logo-in {
+	0%{
+		transform:		translateX(4em);
+	}
+
+	75%{
+		transform:		translateX(-1em);
+
+	}
+
+	100%{
+		transform:		translateX(0em);
+
+	}
 }
 
 #toc {
-	position:			absolute;
-	top:				0;
-	bottom:				12rem;
 	padding:			0;
 	padding-left:		1rem;
-	padding-top:		1rem;
-	overflow-y:			scroll;
+	overflow-y:			hidden;
 	overflow-x:			hidden;
+	height:				100%;
 }
+
+#toc:hover {
+	overflow-y:			scroll;
+}
+
+.hero-in #toc {
+	overflow:			hidden;
+}
+
+#toc:before,
+#toc:after{
+	content:			'';
+	display:			block;
+	height:				4em;
+}
+
 
 .narrow #toc {
 	display:			none;
+	display:			block;
+	position:			relative;
+	height:				auto;
+	background:			#fff;
+	overflow:			visible !important;
 }
 
-.show-toc .narrow #toc {
-	display:			block;
-	position:			fixed;
-	top:				0;
-	left:				0;
-	right:				0;
-	bottom:				0;
-	height:				auto;
-	overflow-x:			hidden;
-	overflow-y:			scroll;
-	background:			#fff;
-	padding-top:		5rem;
-	z-index:			50;
+.narrow #toc ul {
+	margin-bottom:		2rem;
 }
+
+#toc .languages {
+	display:			none;
+}
+
+.narrow #toc .languages {
+	display:			block;
+	text-align:			right;
+}
+
+.narrow #toc .languages a{
+	display:			inline-block;
+	min-width:			2em;
+	padding:			0 0.5em;
+	margin-right:		0.5em;
+	line-height:		1.6em;
+	background:			#f97134;
+	color:				#fff;
+	text-align:			center;
+	font-weight:		bold;
+}
+
+.narrow #toc .languages a[href]{
+	background:			#fff;
+	color:				#f97134;
+	box-shadow:			0 0 0 0.2em #f97134 inset;
+	font-weight:		normal;
+}
+
 
 #toc li {
 	display:			block;
@@ -396,7 +612,7 @@ aside.right > * {
 #toc li.depth-3 .chapter-number .digit,
 #toc li.depth-4 .chapter-number .digit,
 #toc li.depth-5 .chapter-number .digit {
-	opacity:			0.3;
+	opacity:			1;/*0.3;*/
 }
 
 #toc li.depth-3 .chapter-number .digit + .digit + .digit,
@@ -416,19 +632,27 @@ aside.right > * {
 
 /**orange**/
 
-#toc .chapter-2.depth-1{
+#toc .chapter-2.depth-1,
+#toc .chapter-4.depth-1,
+#toc .chapter-6.depth-1 {
 	background:			#f97134 !important;
 }
 
-#toc .chapter-2.depth-1 a{
+#toc .chapter-2.depth-1 a,
+#toc .chapter-4.depth-1 a,
+#toc .chapter-6.depth-1 a {
 	box-shadow:			0 -0.5rem 0 #f97134;
 }
 
-#toc .chapter-2:nth-of-type(2n+2) {
+#toc .chapter-2:nth-of-type(2n+2),
+#toc .chapter-4:nth-of-type(2n+2),
+#toc .chapter-6:nth-of-type(2n+2) {
 	background:			#f4e9df;
 }
 
-#toc .chapter-2:nth-of-type(2n+3) {
+#toc .chapter-2:nth-of-type(2n+3),
+#toc .chapter-4:nth-of-type(2n+3),
+#toc .chapter-6:nth-of-type(2n+3) {
 	background:			#f6c6a9;
 }
 
@@ -436,22 +660,26 @@ aside.right > * {
 
 
 #toc .chapter-1.depth-1,
-#toc .chapter-3.depth-1 {
+#toc .chapter-3.depth-1,
+#toc .chapter-5.depth-1 {
 	background:			#00b9cb !important;
 }
 
 #toc .chapter-1.depth-1 a,
-#toc .chapter-3.depth-1 a{
+#toc .chapter-3.depth-1 a,
+#toc .chapter-5.depth-1 a{
 	box-shadow:			0 -0.5rem 0 #00b9cb;
 }
 
 #toc .chapter-1:nth-of-type(2n+2),
-#toc .chapter-3:nth-of-type(2n+2){
+#toc .chapter-3:nth-of-type(2n+2),
+#toc .chapter-5:nth-of-type(2n+2){
 	background:			#c7eaf1;
 }
 
 #toc .chapter-1:nth-of-type(2n+3),
-#toc .chapter-3:nth-of-type(2n+3){
+#toc .chapter-3:nth-of-type(2n+3),
+#toc .chapter-5:nth-of-type(2n+3){
 	background:			#91e3f2;
 }
 
@@ -466,8 +694,8 @@ aside.right > * {
 
 /* 
 	paragraph should not be styled like this,
-	nad should not appear within <a>. 
-	But markdown semms to always reder them, so this is a work around.
+	<p> should not appear within <a>. 
+	But markdown seems to always render them, so this is a work around.
 */
 
 #toc li a p,
