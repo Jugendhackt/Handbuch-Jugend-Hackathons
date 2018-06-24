@@ -1,0 +1,7 @@
+language: ruby
+rvm:
+  - 2.2
+install: 
+  - gem install github-pages
+script:
+  - jekyll build

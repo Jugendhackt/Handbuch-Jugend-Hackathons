@@ -1,14 +1,24 @@
 <head>
 	<meta charset="UTF-8">
 	<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable= false">    
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link type="text/css" rel="stylesheet" href="styles/styles.css">
-	<link type="text/css" rel="stylesheet" href="styles/font-awesome.min.css">
+	{% include stylesheets.html %}
 
-	<script src="js/lib/angular.min.js"></script>
-	<script src="js/lib/angular-touch.min.js"></script>
-
-	<script src="js/app.js"></script>
+	<noscript>
+		<style type="text/css">
+			.preloader {
+				display: none !important;
+			}
+		</style>
+	</noscript>
 
 </head>
+
+<div id="loader-wrapper">
+			<div id="loader"></div>
+
+			<div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+
+		</div>
