@@ -16,5 +16,5 @@ items:
 ---
 
 {% for item in page.items %}
- * [{{item}}](appendix/{{item}}) 
+ * <a href="appendix/{{item}}" data-proofer-ignore>{{item}}</a>
 {% endfor %}
