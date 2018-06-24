@@ -1,4 +1,4 @@
 source 'https://rubygems.org' do
   gem 'github-pages'
-  gem 'htmlproofer'
+  gem 'html-proofer'
 end
