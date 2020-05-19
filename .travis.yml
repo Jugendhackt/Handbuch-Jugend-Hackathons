@@ -2,6 +2,7 @@ language: ruby
 rvm:
   - 2.2
 install: 
-  - gem install github-pages
+  - bundle install
+  - chmod +x script/cibuild
 script:
-  - jekyll build
+  - ./script/cibuild
