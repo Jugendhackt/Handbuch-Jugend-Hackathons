@@ -1,4 +1,4 @@
-baseurl: "/Handbuch-Jugend-Hackathons"
+baseurl: "/"
 
 collections:
     chapters_de:
