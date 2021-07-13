@@ -3,21 +3,10 @@ title: 					"Jury und Preise"
 number: 		"3.9.17"
 ---
 
-| Zeitlicher Umfang | Technik und Materialbedarf                                                                                                                                           | Verantwortlich |
-|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|
-| 2 - 4 Stunden     | * Präsentationstechnik: Beamer, Leinwand, Kamera zum Abfilmen der Bildschirme * Bestuhlung * ggf. Technik für Livestream | Organisation, Moderation   |
+In der Anfangszeit von Jugend Hackt war der Wettbewerbscharakter des Formats Hackathon samt Jury und Preisen noch fester Bestandteil eines jeden Events. Seit 2016 sind Jury-Entscheidungen und Preise jedoch [kein Bestandteil von Jugend-hackt-Events mehr](https://jugendhackt.org/blog/auf-gehts-nach-berlin-zu-jugend-hackt-2016/).
 
-Auch aus der Welt der Hackathons ist die Rahmung durch einen Wettbewerb samt Jury und Preisen übernommen. Dies hat viele Vorteile: Zum einen ist es möglich, der Abschluss-Präsentation etwas Feierliches zu geben. Die Stimmung ist gleich aufgeregter und geladener durch die Dramaturgie einer Konkurrenz-Situation, durch das Der-Juryentscheidung-Entgegenfiebern und das gegenseitige Anfeuern und Mitfreuen. Und Preise in verschiedenen Kategorien erlauben es, den Fokus auf bestimmte Themen zu lenken und auch anderen Fähigkeiten neben dem Coding Aufmerksamkeit zu schenken.
+Eine Bewertung der Ergebnisse verspricht eine aufgeregtere und geladenere Stimmung während der Abschnlusspräsentation durch das Der-Juryentscheidung-Entgegenfiebern. Preise in verschiedenen Kategorien erlauben es, den Fokus auf bestimmte Themen zu lenken und auch anderen Fähigkeiten neben dem Coding Aufmerksamkeit zu schenken.
 
-**Die aktuellen Kategorien bei „Jugend hackt“ sind:**
+Eine auf diese Weise künstlich geschaffene Konkurrenzsituation unter den Teilnehmenden kann jedoch die gewollte teamübergreifende Zusammenarbeit behindern. Im Vorderund eines Jugend-Hackathons sollten insbesondere das Erfahren von Selbstwirksamkeit, das Erlernen neuer Fähigkeiten und der Austausch mit Gleichgesinnten stehen. Eine Wettbewerbssituation unter den Teilnehmenden, wie sie bei einigen „klassischen“ Hackathons üblich ist, hat sich in der Praxis als schwer vereinbar mit bestmöglichen gemeinschaftlichen Lernprozessen herausgestellt. Bewertungen und Preise können Teilnehmende motivieren, ihr Wissen nicht mit anderen Teams zu teilen oder mehr an einer möglichst glamourösen Präsentation zu arbeiten, als sich inhaltlich auf die bearbeiteten Themen und erlernte Fähigkeiten zu konzentrieren.
 
-* Publikumspreis
-* Bestes Design
-* Bester Code
-* AHA-Moment
-* Mit Code die Welt verbessern
-* Sonderpreis (z.B. 2015 in Berlin: #refugeeswelcome)
-
-Die Preise sind zum Teil an unseren anfänglichen Partner „Young Rewired State“ angelehnt, manche haben sich weiterentwickelt. Teilweise entwickeln die Teilnehmenden ihre Projekte ganz gezielt in eine Richtung und möchten z.B. den Bestes-Design-Preis für sich gewinnen.
-
-Die Preise an sich sind monetär sehr klein gehalten (meist 10-Euro-Technikgutscheine pro Person), um dem ganzen Wettbewerbsgedanken nicht zu viel Aufmerksamkeit zu schenken. Dennoch können wir immer wieder beobachten, dass die Jury-Entscheidungen nicht nur große Vorfreude und Spannung erzeugen, sondern auch große Enttäuschungen. Einen Weg, die positiven Seiten des Wettbewerbs – gerade auch die kommunikativen Vorteile für die Öffentlichkeitsarbeit, die bei einem so großen Projekt nicht zu vernachlässigen sind – zu erhalten und die negativen zu lindern, haben wir noch nicht gefunden, werden es aber weiterhin ausprobieren. Neben dieser recht quantitativen Rückmeldung sollte immer auch das qualitative Feedback der Mentor/innen zu den Teilnehmenden im Fokus stehen.
+Jury-Entscheidungen erzeugen zudem leider nicht nur große Vorfreude und Spannung, sondern oft auch große Enttäuschungen. Einen Weg, die positiven Seiten des Wettbewerbs zu erhalten und die negativen zu lindern, haben wir noch nicht gefunden. Die Motivation der Teilnehmenden entsteht allerdings ohnehin nicht durch Konkurrenzdruck oder -denken.
