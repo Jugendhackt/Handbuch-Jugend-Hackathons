@@ -5,7 +5,24 @@ Gefördert durch die Jugend- und Familienstiftung des Landes Berlin im Rahmen de
 
 [Hier](https://jugendhackt.github.io/Handbuch-Jugend-Hackathons) geht es zur Webseite des Handbuchs.
 
+## How to build
+First, install the dependencies from the `Gemfile`:
+```bash
+bundle config set --local path 'vendor/bundle'
+bundle install
+```
 
+Now, you can build the static website:
+```
+bundle exec jekyll
+```
+
+The static website will be written to the `_site` directory.
+
+Jekyll can also serve the website on localhost and auto-regenerate the website when files change:
+```
+bundle exec jekyll serve
+```
 
 ## How to add translations
 
